@@ -1,61 +1,75 @@
-// بيانات المهارات والمشاريع والشهادات
-const skills = {
-  "الشبكات": ["CCNA", "Routing & Switching", "TCP/IP", "VLANs", "Troubleshooting", "MikroTik"],
-  "الأنظمة": ["Windows Server", "Active Directory", "Microsoft 365", "Virtualization", "Support"],
-  "البرمجة": ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
-  "قواعد البيانات": ["MySQL", "Database Design", "Data Management"],
-  "أخرى": ["AI Tools", "IT Support", "Problem Solving", "Project Management"]
-};
+// ===== Year =====
+document.getElementById('year').textContent = new Date().getFullYear();
 
-const projects = [
-  ["نظام إدارة أكاديمية المدارس", "منصة ويب لإدارة نتائج الطلاب وإصدار الشهادات باستخدام تقنيات ويب حديثة وتكامل مع قواعد البيانات."],
-  ["نظام إدارة الشهادات", "حل رقمي لإصدار الشهادات تلقائيًا ومعالجة النتائج."],
-  ["بحث الذكاء الاصطناعي في التشخيص الطبي", "دراسة تقبّل المرضى للذكاء الاصطناعي في قرارات التشخيص الطبي."],
-  ["مشروع مراقبة البيئة", "استكشاف حلول تقنية وقواعد بيانات وأساليب برمجية لأنظمة المراقبة البيئية."]
+// ===== Theme toggle (persists) =====
+const themeBtn = document.getElementById('themeBtn');
+const root = document.documentElement;
+const saved = localStorage.getItem('theme');
+if (saved === 'light') { root.setAttribute('data-theme', 'light'); themeBtn.textContent = '\u2600'; }
+themeBtn.addEventListener('click', () => {
+  const isLight = root.getAttribute('data-theme') === 'light';
+  if (isLight) { root.removeAttribute('data-theme'); themeBtn.textContent = '\u263D'; localStorage.setItem('theme','dark'); }
+  else { root.setAttribute('data-theme','light'); themeBtn.textContent = '\u2600'; localStorage.setItem('theme','light'); }
+});
+
+// ===== Mobile menu =====
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+hamburger.addEventListener('click', () => menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+// ===== Typing effect =====
+const typing = document.getElementById('typing');
+const roles = [
+  'IT Technical Support Specialist',
+  'Help Desk & Network Support',
+  'CCNA | Microsoft 365 Admin',
+  'Windows / Linux Systems'
 ];
-
-const certs = ["Cisco CCNA", "Huawei Certifications", "Coursera Certificates", "Networking Certifications", "AI Certifications"];
-
-// بناء بطاقات المهارات
-const skillsGrid = document.getElementById("skillsGrid");
-for (const [cat, list] of Object.entries(skills)) {
-  skillsGrid.innerHTML += `<div class="card glass reveal"><h4>${cat}</h4>
-    <div class="tags">${list.map(s => `<span class="tag">${s}</span>`).join("")}</div></div>`;
+let r = 0, c = 0, deleting = false;
+function type() {
+  const word = roles[r];
+  typing.textContent = deleting ? word.slice(0, c--) : word.slice(0, c++);
+  if (!deleting && c === word.length + 1) { deleting = true; setTimeout(type, 1600); return; }
+  if (deleting && c === 0) { deleting = false; r = (r + 1) % roles.length; }
+  setTimeout(type, deleting ? 45 : 95);
 }
+type();
 
-// بناء بطاقات المشاريع
-const projectsGrid = document.getElementById("projectsGrid");
-projects.forEach(([t, d]) => {
-  projectsGrid.innerHTML += `<div class="card glass reveal"><h4>${t}</h4><p>${d}</p></div>`;
-});
-
-// قائمة الشهادات
-document.getElementById("certList").innerHTML = certs.map(c => `<li>✔ ${c}</li>`).join("");
-
-// السنة في الفوتر
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// تبديل الوضع الداكن/الفاتح
-const themeBtn = document.getElementById("themeBtn");
-themeBtn.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-  themeBtn.textContent = document.body.classList.contains("light") ? "☀️" : "🌙";
-});
-
-// قائمة الموبايل
-const menu = document.getElementById("menu");
-document.getElementById("hamburger").addEventListener("click", () => menu.classList.toggle("open"));
-menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => menu.classList.remove("open")));
-
-// تأثير الظهور عند التمرير
+// ===== Scroll reveal =====
 const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
-}, { threshold: 0.15 });
-document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// زر العودة للأعلى
-const topBtn = document.getElementById("topBtn");
-window.addEventListener("scroll", () => {
-  topBtn.classList.toggle("show", window.scrollY > 400);
+// ===== Animated counters =====
+const counters = document.querySelectorAll('.num');
+const cIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    const target = +el.dataset.target;
+    const suffix = el.dataset.suffix || '';
+    let cur = 0;
+    const step = Math.max(1, Math.ceil(target / 60));
+    const tick = () => {
+      cur += step;
+      if (cur >= target) { el.textContent = target + suffix; }
+      else { el.textContent = cur + suffix; requestAnimationFrame(tick); }
+    };
+    tick();
+    cIO.unobserve(el);
+  });
+}, { threshold: 0.5 });
+counters.forEach(el => cIO.observe(el));
+
+// ===== Scroll progress bar + back-to-top + nav shadow =====
+const progressBar = document.getElementById('progressBar');
+const topBtn = document.getElementById('topBtn');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  progressBar.style.width = scrolled + '%';
+  if (h.scrollTop > 400) topBtn.classList.add('show'); else topBtn.classList.remove('show');
 });
-topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
