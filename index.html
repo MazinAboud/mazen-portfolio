@@ -1,97 +1,151 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="بورتفوليو احترافي - مازن عبود، خريج تقنية معلومات" />
-  <title>Mazen Aboud | IT Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Mazin Aboud - IT Technical Support Specialist. Help Desk, CCNA, Microsoft 365, Networking, Windows/Linux." />
+<title>Mazin Aboud | IT Technical Support Specialist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="nav glass">
-    <a href="#hero" class="logo">Mazen<span>.</span></a>
-    <nav id="menu">
-      <a href="#hero">الرئيسية</a>
-      <a href="#about">نبذة</a>
-      <a href="#skills">المهارات</a>
-      <a href="#projects">المشاريع</a>
-      <a href="#contact">تواصل</a>
-    </nav>
-    <button id="themeBtn" aria-label="تبديل الوضع">🌙</button>
-    <button id="hamburger" aria-label="القائمة">☰</button>
-  </header>
+<div class="progress-bar" id="progressBar"></div>
 
-  <!-- Hero -->
-  <section id="hero" class="hero">
-    <div class="hero-inner reveal">
-      <div class="avatar">MA</div>
-      <h1>مازن عبود</h1>
-      <h2 class="gradient-text">خريج تقنية المعلومات</h2>
-      <p>شغوف بالبنية التحتية للشبكات والأمن السيبراني والذكاء الاصطناعي والحلول الرقمية.</p>
-      <div class="cta">
-        <a href="#" class="btn primary">تحميل السيرة الذاتية</a>
-        <a href="#contact" class="btn ghost">تواصل معي</a>
-        <a href="#projects" class="btn ghost">المشاريع</a>
-      </div>
-    </div>
-  </section>
+<header class="nav" id="nav">
+<a href="#hero" class="logo">mazin<span>.dev</span></a>
+<nav id="menu">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#certs">Certifications</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="nav-actions">
+<button id="themeBtn" aria-label="Toggle theme">&#9789;</button>
+<button id="hamburger" aria-label="Menu">&#9776;</button>
+</div>
+</header>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <h3 class="section-title reveal">نبذة عني</h3>
-    <p class="about-text glass reveal">
-      خريج تقنية معلومات متحمّس، لديه اهتمام قوي بالشبكات وإدارة الأنظمة والأمن السيبراني
-      وحلول البرمجيات. خبرة في مشاريع أكاديمية وعملية تشمل أنظمة قواعد البيانات وتطوير
-      الويب وتقنيات الشبكات والحلول المعتمدة على الذكاء الاصطناعي. أتعلّم باستمرار وأسعى
-      للمساهمة في بيئات تقنية مبتكرة.
-    </p>
-  </section>
+<section id="hero" class="hero">
+<div class="hero-grid"></div>
+<div class="hero-inner reveal">
+<div class="avatar-ring"><div class="avatar">MA</div></div>
+<p class="eyebrow"><span class="dot"></span> Available for opportunities</p>
+<h1>Hi, I'm <span class="gradient-text">Mazin Aboud</span></h1>
+<h2 class="role" id="typing"></h2>
+<p class="hero-sub">Help Desk Support &bull; CCNA &bull; Microsoft 365 &bull; Windows / Linux &bull; Networking</p>
+<div class="cta">
+<a href="#contact" class="btn primary">Get in touch</a>
+<a href="https://github.com/MazinAboud" target="_blank" rel="noopener" class="btn ghost">GitHub Profile</a>
+</div>
+<div class="hero-badges">
+<img src="https://img.shields.io/badge/CCNA-Certified-1BA0D7?style=flat-square&logo=cisco&logoColor=white" alt="CCNA" />
+<img src="https://img.shields.io/badge/Microsoft%20365-Admin-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft 365" />
+<img src="https://img.shields.io/badge/Linux-Ubuntu-E95420?style=flat-square&logo=linux&logoColor=white" alt="Linux" />
+<img src="https://img.shields.io/badge/Networking-TCP%2FIP-2C3E50?style=flat-square" alt="Networking" />
+</div>
+</div>
+</section>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <h3 class="section-title reveal">المهارات</h3>
-    <div class="grid" id="skillsGrid"></div>
-  </section>
+<section id="stats" class="stats section">
+<div class="stat reveal"><span class="num" data-target="500" data-suffix="+">0</span><p>End-users supported</p></div>
+<div class="stat reveal"><span class="num" data-target="2000" data-suffix="+">0</span><p>Incidents documented</p></div>
+<div class="stat reveal"><span class="num" data-target="50" data-suffix="+">0</span><p>Daily tickets resolved</p></div>
+<div class="stat reveal"><span class="num" data-target="65" data-suffix="%">0</span><p>First-contact resolution</p></div>
+</section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <h3 class="section-title reveal">المشاريع الأكاديمية</h3>
-    <div class="grid" id="projectsGrid"></div>
-  </section>
+<section id="about" class="section">
+<h3 class="section-title reveal"><span class="hash">#</span> About Me</h3>
+<div class="about-grid">
+<p class="about-text card reveal">
+IT Technical Support Specialist with over a year of enterprise help desk experience supporting university environments and 500+ end-users. Resolved 50+ daily tickets through ITIL-aligned workflows, driving a 20% gain in resolution efficiency and bringing first-contact resolution to 65%. Proficient across Windows 10/11, Windows Server, Linux (Ubuntu) and Microsoft 365 administration, with CCNA-backed hands-on experience in Cisco IOS, OSPF, VLANs, TCP/IP and network security hardening. Handled 2,000+ documented remote incidents via Microsoft Remote Desktop and AnyDesk while maintaining a knowledge base that measurably reduced escalations to senior engineers.
+</p>
+<div class="about-side card reveal">
+<h4>Services</h4>
+<ul>
+<li>Technical Support</li>
+<li>Computer Networking</li>
+<li>Network Support</li>
+<li>Computer Repair</li>
+<li>Backup &amp; Recovery</li>
+</ul>
+<div class="about-loc">&#128205; Cairo, Egypt</div>
+</div>
+</div>
+</section>
 
-  <!-- Education + Certs -->
-  <section id="edu" class="section">
-    <h3 class="section-title reveal">التعليم والشهادات</h3>
-    <div class="grid">
-      <div class="card glass reveal">
-        <h4>بكالوريوس تقنية المعلومات</h4>
-        <p>الشبكات • قواعد البيانات • نظم المعلومات • الأمن السيبراني • تطوير البرمجيات</p>
-      </div>
-      <div class="card glass reveal" id="certCard">
-        <h4>الشهادات</h4>
-        <ul id="certList"></ul>
-      </div>
-    </div>
-  </section>
+<section id="skills" class="section">
+<h3 class="section-title reveal"><span class="hash">#</span> Skills &amp; Tools</h3>
+<div class="skills-grid">
+<div class="skill-card card reveal"><h4>&#128421; Systems</h4><div class="tags"><span>Windows 10/11</span><span>Windows Server</span><span>Linux (Ubuntu)</span><span>Active Directory</span></div></div>
+<div class="skill-card card reveal"><h4>&#127760; Networking</h4><div class="tags"><span>CCNA</span><span>Cisco IOS</span><span>OSPF</span><span>VLANs</span><span>TCP/IP</span><span>Firewalls</span></div></div>
+<div class="skill-card card reveal"><h4>&#9729; Microsoft 365</h4><div class="tags"><span>M365 Admin</span><span>Exchange</span><span>Identity Mgmt</span><span>Access Control</span></div></div>
+<div class="skill-card card reveal"><h4>&#127891; Support</h4><div class="tags"><span>Help Desk</span><span>Troubleshooting</span><span>ITIL</span><span>AnyDesk</span><span>Remote Desktop</span></div></div>
+</div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h3 class="section-title reveal">تواصل معي</h3>
-    <div class="contact glass reveal">
-      <p>📧 your-email@example.com</p>
-      <p>💼 LinkedIn: linkedin.com/in/your-profile</p>
-      <p>🐙 GitHub: github.com/your-username</p>
-      <p>📍 السودان / مصر</p>
-    </div>
-  </section>
+<section id="experience" class="section">
+<h3 class="section-title reveal"><span class="hash">#</span> Experience</h3>
+<div class="timeline">
+<div class="tl-item card reveal">
+<div class="tl-head"><h4>IT Technical Support Specialist</h4><span class="tl-date">Apr 2025 &mdash; Jun 2026</span></div>
+<p class="tl-org">The Future University &bull; Cairo, Egypt &bull; Full-time</p>
+<ul>
+<li>Diagnosed and resolved endpoint, application and network connectivity issues for 500+ users across Windows and Linux environments.</li>
+<li>Processed 50+ daily tickets through structured workflows, achieving a 20% improvement in team closure rates.</li>
+<li>Executed scheduled OS patching across 500+ endpoints, maintaining security and compliance.</li>
+<li>Maintained a centralized knowledge base of 2,000+ incidents with a 65% direct resolution rate.</li>
+<li>Reduced repeat escalations by 35% through structured Tier 2 handoff documentation.</li>
+</ul>
+</div>
+<div class="tl-item card reveal">
+<div class="tl-head"><h4>Technical Support Agent &mdash; Internship</h4><span class="tl-date">Apr 2025 &mdash; Sep 2025</span></div>
+<p class="tl-org">The Future University &bull; Internship</p>
+<ul>
+<li>Delivered first-line support while learning enterprise workflows.</li>
+<li>Collaborated on team projects, demonstrating adaptability and problem-solving.</li>
+<li>Managed time effectively to meet all assigned deadlines.</li>
+</ul>
+</div>
+</div>
+</section>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> مازن عبود. جميع الحقوق محفوظة.</p>
-  </footer>
+<section id="certs" class="section">
+<h3 class="section-title reveal"><span class="hash">#</span> Certifications</h3>
+<div class="cert-grid">
+<div class="cert-card card reveal"><span class="cert-icon">&#127760;</span><h4>CCNA</h4><p>Cisco Certified Network Associate &mdash; Routing, Switching &amp; Network Security.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#129302;</span><h4>AI Fundamentals with Claude</h4><p>Coursera &times; Anthropic &amp; Advancing Women in Tech.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#9729;</span><h4>Microsoft 365 Administration</h4><p>Hands-on M365 admin, identity &amp; access management.</p></div>
+</div>
+</section>
 
-  <button id="topBtn" aria-label="للأعلى">↑</button>
+<section id="github" class="section">
+<h3 class="section-title reveal"><span class="hash">#</span> GitHub Activity</h3>
+<div class="gh-stats reveal">
+<img src="https://github-readme-stats.vercel.app/api?username=MazinAboud&show_icons=true&hide_border=true&theme=transparent&title_color=6c8cff&icon_color=6c8cff" alt="GitHub Stats" loading="lazy" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=MazinAboud&hide_border=true&background=00000000&ring=6c8cff&fire=6c8cff&currStreakLabel=6c8cff" alt="GitHub Streak" loading="lazy" />
+</div>
+</section>
 
-  <script src="script.js"></script>
+<section id="contact" class="section">
+<h3 class="section-title reveal"><span class="hash">#</span> Let's Connect</h3>
+<div class="contact-card card reveal">
+<p>Open to IT support, networking and system administration opportunities.</p>
+<div class="contact-links">
+<a href="https://www.linkedin.com/in/mazin-aboud-a1a3b2306/" target="_blank" rel="noopener">&#128279; LinkedIn</a>
+<a href="https://github.com/MazinAboud" target="_blank" rel="noopener">&#128187; GitHub</a>
+<span>&#128205; Cairo, Egypt</span>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<p>&copy; <span id="year"></span> Mazin Aboud &bull; Built with HTML, CSS &amp; JavaScript</p>
+</footer>
+
+<button id="topBtn" aria-label="Back to top">&#8593;</button>
+<script src="script.js"></script>
 </body>
 </html>
