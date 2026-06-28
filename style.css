@@ -213,3 +213,6 @@ transform:translateX(110%);transition:transform .3s;height:auto}
 .section{padding:60px 16px}
 .tl-head,.project-head{flex-direction:column;align-items:flex-start}
 }
+@keyframes spin-rev{to{transform:rotate(-360deg)}}
+.avatar{animation:spin-rev 6s linear infinite}
+.avatar-illustration{display:block;width:100%;height:100%}
