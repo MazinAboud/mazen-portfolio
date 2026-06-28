@@ -9,7 +9,6 @@
 <meta name="theme-color" content="#0a0e1a" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://mazinaboud.github.io/mazen-portfolio/" />
-<!-- Open Graph / social sharing -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Mazin Aboud | IT Technical Support Specialist" />
 <meta property="og:description" content="Help Desk, CCNA, Microsoft 365, Networking, Windows/Linux. 500+ users supported, 65% first-contact resolution." />
@@ -17,12 +16,11 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Mazin Aboud | IT Technical Support Specialist" />
 <meta name="twitter:description" content="Help Desk, CCNA, Microsoft 365, Networking, Windows/Linux." />
-<!-- Inline SVG favicon (no extra request, no 404) -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0e1a'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='52' font-weight='bold' fill='%236c8cff' text-anchor='middle'%3EMA%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=3" />
+<link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
 <div class="progress-bar" id="progressBar"></div>
@@ -33,6 +31,7 @@
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
 <a href="#certs">Certifications</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -46,7 +45,7 @@
 <section id="hero" class="hero">
 <div class="hero-grid" aria-hidden="true"></div>
 <div class="hero-inner reveal">
-<div class="avatar-ring"><div class="avatar">MA</div></div>
+<div class="avatar-ring"><img class="avatar-img" src="avatar.jpg?v=1" alt="Mazin Aboud" loading="eager" onerror="this.outerHTML='<div class=&quot;avatar&quot;>MA</div>'" /></div>
 <p class="eyebrow"><span class="dot"></span> Available for opportunities</p>
 <h1>Hi, I'm <span class="gradient-text">Mazin Aboud</span></h1>
 <h2 class="role" id="typing">IT Technical Support Specialist</h2>
@@ -127,12 +126,47 @@ IT Technical Support Specialist with over a year of enterprise help desk experie
 </div>
 </section>
 
+<section id="projects" class="section">
+<h3 class="section-title reveal"><span class="hash">#</span> Key Projects</h3>
+<div class="projects-grid">
+<div class="project-card card reveal">
+<div class="project-head">
+<h4>Enterprise Network &amp; Virtualization Infrastructure Lab</h4>
+<span class="tl-date">Jan 2025 &mdash; Present</span>
+</div>
+<div class="project-tech">
+<span>Cisco Packet Tracer</span><span>VMware Workstation</span><span>Ubuntu Server 22.04 LTS</span><span>OSPFv2</span><span>ACLs</span><span>SSH</span><span>MikroTik RouterOS</span><span>PowerShell</span><span>Wireshark</span>
+</div>
+<ul>
+<li>Designed and implemented a multi-site enterprise network topology in Cisco Packet Tracer &mdash; configuring OSPFv2 link-state routing, VLAN segmentation with 802.1Q trunking, and Spanning Tree Protocol (STP) for loop prevention.</li>
+<li>Hardened network security through extended ACLs, Port Security at the access layer, and SSH-only management access, significantly reducing the simulated attack surface.</li>
+<li>Diagnosed network and connectivity issues using TCP/IP troubleshooting tools including Wireshark, ping and traceroute &mdash; isolating faults at the endpoint, switch, and routing layers.</li>
+<li>Provisioned Ubuntu Server 22.04 LTS on VMware Workstation; configured SSH access controls, Sudo privilege policies, UFW firewall rules, and Apache web hosting with security best practices.</li>
+<li>Deployed a PHP/MySQL web application on Apache and configured MikroTik RouterOS with NAT and port forwarding rules to enforce controlled external access &mdash; delivering a fully integrated solution spanning application hosting to network perimeter security.</li>
+</ul>
+</div>
+</div>
+</section>
+
 <section id="certs" class="section">
 <h3 class="section-title reveal"><span class="hash">#</span> Certifications</h3>
 <div class="cert-grid">
-<div class="cert-card card reveal"><span class="cert-icon">&#127760;</span><h4>CCNA</h4><p>Cisco Certified Network Associate &mdash; Routing, Switching &amp; Network Security.</p></div>
-<div class="cert-card card reveal"><span class="cert-icon">&#129302;</span><h4>AI Fundamentals with Claude</h4><p>Coursera &times; Anthropic &amp; Advancing Women in Tech.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#127760;</span><h4>CCNA 200-301</h4><p>Cisco Certified Network Associate &mdash; Engovation. Nov 2025 &ndash; Jan 2026.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#127760;</span><h4>CCNA 200-301: Implementation &amp; Administration</h4><p>Cisco Implementation &amp; Administration &mdash; Logical Operations. ID: SYZAEJ7QJGX0</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#128272;</span><h4>CCNA: Security &amp; Automation</h4><p>Network Security, Automation and Troubleshooting &mdash; Logical Operations. ID: Q5NPGQNWSK6B</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#128225;</span><h4>CCNA: Networking Basics</h4><p>Switching, Addressing and Routing &mdash; Logical Operations. ID: EW5QPKRBCSNU</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#128737;</span><h4>Google Network Security</h4><p>Network security fundamentals and defensive practices &mdash; Google. ID: TAOA75WB7WJ6</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#127891;</span><h4>Google IT Support Professional</h4><p>Google IT Support Professional Certificate (v3) &mdash; Google.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#9876;</span><h4>IT Security: Digital Dark Arts</h4><p>Cyber attacks, defense-in-depth and security hardening &mdash; Google. ID: TRK1HNXEE7MZ</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#129302;</span><h4>AI Fundamentals with Claude</h4><p>AI fundamentals &mdash; Coursera &times; Anthropic / Advancing Women in Tech. ID: QXBTZHZOP34V</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#128104;&#8205;&#128187;</span><h4>Network Technician Career Path</h4><p>End-to-end network technician training pathway &mdash; Cisco.</p></div>
 <div class="cert-card card reveal"><span class="cert-icon">&#9729;</span><h4>Microsoft 365 Administration</h4><p>Hands-on M365 admin, identity &amp; access management.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#128737;</span><h4>IT Security &amp; Cybersecurity Fundamentals</h4><p>Security fundamentals &mdash; Google / Microsoft Coursera. Feb 2025 &ndash; Dec 2025.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#128736;</span><h4>System Administration &amp; IT Infrastructure Services</h4><p>Infrastructure services administration &mdash; Google Coursera. Jul 2025 &ndash; Sep 2025.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#128421;</span><h4>Operating Systems and You: Becoming a Power User</h4><p>OS administration for power users &mdash; Google Coursera. Jan 2025 &ndash; Jul 2025.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#9729;</span><h4>Introduction to Networking &amp; Cloud Computing</h4><p>Networking and cloud fundamentals &mdash; Google Coursera. Jan 2025 &ndash; Feb 2025.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#128225;</span><h4>Networking Basics &amp; Network Devices Configuration</h4><p>Network devices configuration &mdash; Cisco. Oct 2024 &ndash; Jan 2025.</p></div>
+<div class="cert-card card reveal"><span class="cert-icon">&#127891;</span><h4>Technical Support Fundamentals</h4><p>Help desk and support foundations &mdash; Google Coursera. Dec 2024 &ndash; Jan 2025.</p></div>
 </div>
 </section>
 
@@ -162,6 +196,6 @@ IT Technical Support Specialist with over a year of enterprise help desk experie
 </footer>
 
 <button id="topBtn" aria-label="Back to top">&#8593;</button>
-<script src="script.js?v=3"></script>
+<script src="script.js?v=4"></script>
 </body>
 </html>
