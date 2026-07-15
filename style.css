@@ -177,6 +177,7 @@ border:1px solid var(--border);font-family:'JetBrains Mono',monospace}
 .cert-icon{font-size:2.4rem;display:block;margin-bottom:14px}
 .cert-card h4{margin-bottom:8px;font-size:1.05rem}
 .cert-card p{color:var(--muted);font-size:.88rem}
+.cert-sub{margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-size:.78rem;color:var(--muted);opacity:.85;line-height:1.6;text-align:left}
 
 /* github */
 .gh-stats{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
