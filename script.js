@@ -24,7 +24,8 @@ const roles = [
   'IT Technical Support Specialist',
   'Help Desk & Network Support',
   'CCNA | Microsoft 365 Admin',
-  'Windows / Linux Systems'
+  'Windows / Linux Systems',
+  'PHP & MySQL Developer'
 ];
 let r = 0, c = 0, deleting = false;
 function type() {
@@ -73,3 +74,18 @@ window.addEventListener('scroll', () => {
   if (h.scrollTop > 400) topBtn.classList.add('show'); else topBtn.classList.remove('show');
 });
 topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// ===== Scrollspy: highlight active nav link =====
+const spySections = document.querySelectorAll('main section[id]');
+const spyLinks = document.querySelectorAll('#menu a');
+const spy = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const link = document.querySelector(`#menu a[href="#${entry.target.id}"]`);
+    if (!link) return;
+    if (entry.isIntersecting) {
+      spyLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px' });
+spySections.forEach(s => spy.observe(s));

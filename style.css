@@ -19,6 +19,9 @@
 --muted:#5b6781;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+.skip-link{position:absolute;left:-999px;top:auto;background:var(--accent);color:#fff;
+padding:12px 20px;border-radius:8px;z-index:2000;font-weight:600;text-decoration:none}
+.skip-link:focus{left:16px;top:16px}
 html{scroll-behavior:smooth}
 body{
 font-family:'Inter',system-ui,Arial,sans-serif;
@@ -56,6 +59,8 @@ backdrop-filter:blur(14px);
 #menu{display:flex;gap:26px}
 #menu a{color:var(--muted);font-weight:500;font-size:.95rem;position:relative;transition:color .25s}
 #menu a:hover{color:var(--text)}
+#menu a.active{color:var(--text)}
+#menu a.active::after{width:100%}
 #menu a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;
 background:var(--accent);transition:width .25s}
 #menu a:hover::after{width:100%}
@@ -128,6 +133,7 @@ background:var(--card);border:1px solid var(--border);transition:.3s}
 
 /* skills */
 .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.skills-grid .skill-card:nth-child(5){grid-column:1 / -1}
 .skill-card{padding:26px;transition:.3s}
 .skill-card:hover{transform:translateY(-5px);border-color:var(--accent)}
 .skill-card h4{font-size:1.1rem;margin-bottom:16px}
@@ -152,6 +158,7 @@ background:color-mix(in srgb,var(--accent) 12%,transparent);padding:4px 12px;bor
 /* projects */
 .projects-grid{display:grid;grid-template-columns:1fr;gap:22px}
 .project-card{padding:30px;position:relative;border-left:3px solid var(--accent2);transition:.3s}
+.project-card.featured{border-left-color:var(--accent);box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 25%,transparent)}
 .project-card:hover{transform:translateY(-4px);border-color:var(--accent2)}
 .project-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
 .project-head h4{font-size:1.2rem}
@@ -216,3 +223,8 @@ transform:translateX(110%);transition:transform .3s;height:auto}
 @keyframes spin-rev{to{transform:rotate(-360deg)}}
 .avatar{animation:spin-rev 6s linear infinite}
 .avatar-illustration{display:block;width:100%;height:100%}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce){
+*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+}
