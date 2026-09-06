@@ -1,267 +1,2076 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mazin Aboud | IT Technical Support Specialist</title>
-<meta name="description" content="Mazin Aboud - IT Technical Support Specialist based in Saudi Arabia. Help Desk, CCNA, Microsoft 365, Networking, Windows and Linux administration." />
-<meta name="author" content="Mazin Aboud" />
-<meta name="theme-color" content="#0a0e1a" />
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://mazinaboud.github.io/mazen-portfolio/" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Mazin Aboud | IT Technical Support Specialist" />
-<meta property="og:description" content="Help Desk, CCNA, Microsoft 365, Networking, Windows/Linux. 500+ users supported, 65% first-contact resolution." />
-<meta property="og:url" content="https://mazinaboud.github.io/mazen-portfolio/" />
-<meta property="og:image" content="https://mazinaboud.github.io/mazen-portfolio/og-image.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Mazin Aboud | IT Technical Support Specialist" />
-<meta name="twitter:description" content="Help Desk, CCNA, Microsoft 365, Networking, Windows/Linux." />
-<meta name="twitter:image" content="https://mazinaboud.github.io/mazen-portfolio/og-image.jpg" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0e1a'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='52' font-weight='bold' fill='%236c8cff' text-anchor='middle'%3EMA%3C/text%3E%3C/svg%3E" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=9" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'none'; object-src 'none'; frame-src 'none'; manifest-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Mazin Aboud — IT Technical Support Specialist</title>
+<meta name="description" content="Mazin BadrEldin Ali Aboud — IT Technical Support Specialist &amp; Help Desk Engineer. CCNA 200-301, Google IT Support, Google Network Security. Cairo, Egypt.">
+<meta name="author" content="Mazin BadrEldin Ali Aboud">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A0D12">
+<link rel="canonical" href="https://mazinaboud.github.io/mazen-portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mazin Aboud — IT Technical Support Specialist">
+<meta property="og:description" content="Help Desk &amp; Tier 1/2 support for 500+ users. CCNA 200-301, Google IT Support, Google Network Security. 24 verified certifications.">
+<meta property="og:url" content="https://mazinaboud.github.io/mazen-portfolio/">
+<meta property="og:image" content="https://mazinaboud.github.io/mazen-portfolio/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mazin Aboud — IT Technical Support Specialist">
+<meta name="twitter:description" content="Help Desk &amp; Tier 1/2 support for 500+ users. CCNA 200-301, Google IT Support, Google Network Security.">
+<meta name="twitter:image" content="https://mazinaboud.github.io/mazen-portfolio/og-image.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0D12'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='bold' fill='%235B8CFF' text-anchor='middle'%3EMA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root, html[data-theme="light"]{
+    --bg:#F3F5FB;
+    --bg-panel:#FFFFFF;
+    --bg-panel-alt:#F7F8FD;
+    --line:#E7EAF5;
+    --line-soft:#EEF1FA;
+    --text:#2B3245;
+    --text-dim:#6B7385;
+    --text-dimmer:#9AA1B4;
+    --up:#5B7FE0;
+    --up-dim:#C9D5FA;
+    --up-strong:#4A64C4;
+    --warn:#F0A868;
+    --purple:#A78BFA;
+    --pink:#F472B6;
+    --radius:2px;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'IBM Plex Sans', sans-serif;
+    --display: 'Space Grotesk', sans-serif;
+  }
+
+  html[data-theme="dark"]{
+    --bg:#0A0D12;
+    --bg-panel:#12161D;
+    --bg-panel-alt:#171C24;
+    --line:#242B36;
+    --line-soft:#1A1F27;
+    --text:#EBEEF3;
+    --text-dim:#8B95A5;
+    --text-dimmer:#565F6C;
+    --up:#5B8CFF;
+    --up-dim:#1D2B4A;
+    --up-strong:#8FB4FF;
+    --warn:#FFB577;
+    --purple:#B79CFF;
+    --pink:#FF8FC0;
+  }
+
+  html[data-theme="orange"]{
+    --bg:#0B0A0A;
+    --bg-panel:#151311;
+    --bg-panel-alt:#1B1815;
+    --line:#2E2822;
+    --line-soft:#201C18;
+    --text:#F5EEE6;
+    --text-dim:#B0A190;
+    --text-dimmer:#6B5F51;
+    --up:#FF8A3D;
+    --up-dim:#43290F;
+    --up-strong:#FFB066;
+    --warn:#FFCB6B;
+    --purple:#FF9F6B;
+    --pink:#FF6B5C;
+  }
+
+
+  html[data-theme="watermelon"]{
+    --bg:#0A0C0A;
+    --bg-panel:#141814;
+    --bg-panel-alt:#191F19;
+    --line:#293529;
+    --line-soft:#1C221C;
+    --text:#F0F5EE;
+    --text-dim:#9FAF9C;
+    --text-dimmer:#5E6B5A;
+    --up:#FF5C77;
+    --up-dim:#4A1A24;
+    --up-strong:#FF8FA3;
+    --warn:#4CAF7D;
+    --purple:#E23F56;
+    --pink:#FFA6B8;
+  }
+
+  html[data-theme="rose"]{
+    --bg:#0C0A0C;
+    --bg-panel:#171217;
+    --bg-panel-alt:#1D171D;
+    --line:#332830;
+    --line-soft:#221B21;
+    --text:#F5EEF2;
+    --text-dim:#B39EAC;
+    --text-dimmer:#6E5A66;
+    --up:#E85C93;
+    --up-dim:#4A1D33;
+    --up-strong:#F599BE;
+    --warn:#E0A868;
+    --purple:#C77DB0;
+    --pink:#F599BE;
+  }
+
+  html[data-theme="emerald"]{
+    --bg:#080C0A;
+    --bg-panel:#111815;
+    --bg-panel-alt:#161F1B;
+    --line:#243830;
+    --line-soft:#182420;
+    --text:#E9F3EE;
+    --text-dim:#93B0A2;
+    --text-dimmer:#576E63;
+    --up:#2ECC8F;
+    --up-dim:#123B2A;
+    --up-strong:#6EE0AF;
+    --warn:#E0BF68;
+    --purple:#4AB89A;
+    --pink:#6EE0AF;
+  }
+
+  html[data-theme="gold"]{
+    --bg:#0B0A07;
+    --bg-panel:#161309;
+    --bg-panel-alt:#1C170C;
+    --line:#382E15;
+    --line-soft:#221B0D;
+    --text:#F5EFE1;
+    --text-dim:#B8AB88;
+    --text-dimmer:#6E644A;
+    --up:#C9A227;
+    --up-dim:#453510;
+    --up-strong:#E8C25A;
+    --warn:#E0975F;
+    --purple:#B08D3E;
+    --pink:#E8C25A;
+  }
+
+  html[data-theme="navy"]{
+    --bg:#070A12;
+    --bg-panel:#0F1521;
+    --bg-panel-alt:#141B29;
+    --line:#22304A;
+    --line-soft:#161F31;
+    --text:#E9EDF6;
+    --text-dim:#8C99B5;
+    --text-dimmer:#525E75;
+    --up:#4A73C4;
+    --up-dim:#17233D;
+    --up-strong:#7DA0E0;
+    --warn:#D9A868;
+    --purple:#6E7EC9;
+    --pink:#7DA0E0;
+  }
+
+  html[data-theme="coffee"]{
+    --bg:#0B0806;
+    --bg-panel:#17110D;
+    --bg-panel-alt:#1D1611;
+    --line:#392C21;
+    --line-soft:#231A14;
+    --text:#F2EAE1;
+    --text-dim:#B5A28E;
+    --text-dimmer:#6E5F4E;
+    --up:#8B5E3C;
+    --up-dim:#3A2718;
+    --up-strong:#C08A5C;
+    --warn:#D9A868;
+    --purple:#A9754C;
+    --pink:#C08A5C;
+  }
+
+  html[data-theme="nescafe"]{
+    --bg:#0C0906;
+    --bg-panel:#18130E;
+    --bg-panel-alt:#1E1712;
+    --line:#3A2E22;
+    --line-soft:#241C15;
+    --text:#F4EDE3;
+    --text-dim:#C2A98D;
+    --text-dimmer:#7A6650;
+    --up:#D2A679;
+    --up-dim:#4A331F;
+    --up-strong:#E8C29A;
+    --warn:#D9A868;
+    --purple:#BF9264;
+    --pink:#E8C29A;
+  }
+
+  html[data-theme="darkred"]{
+    --bg:#0B0505;
+    --bg-panel:#170D0D;
+    --bg-panel-alt:#1D1010;
+    --line:#3A1E1E;
+    --line-soft:#241313;
+    --text:#F3E7E7;
+    --text-dim:#BA9797;
+    --text-dimmer:#725555;
+    --up:#B33A3A;
+    --up-dim:#421414;
+    --up-strong:#E06868;
+    --warn:#D9975F;
+    --purple:#A6455A;
+    --pink:#E06868;
+  }
+
+  html[data-theme="vanilla"]{
+    --bg:#0C0A06;
+    --bg-panel:#181510;
+    --bg-panel-alt:#1E1A14;
+    --line:#3A3220;
+    --line-soft:#241F17;
+    --text:#F7F1E1;
+    --text-dim:#C9BC9C;
+    --text-dimmer:#7D735C;
+    --up:#E8D9B5;
+    --up-dim:#453D28;
+    --up-strong:#F5E9C8;
+    --warn:#D9A868;
+    --purple:#C9B98A;
+    --pink:#F5E9C8;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(91,127,224,.14), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(167,139,250,.13), transparent 60%),
+      radial-gradient(ellipse 45% 40% at 100% 55%, rgba(244,114,182,.09), transparent 65%),
+      radial-gradient(ellipse 50% 45% at 0% 70%, rgba(91,127,224,.10), transparent 65%),
+      radial-gradient(ellipse 55% 50% at 55% 100%, rgba(240,168,104,.08), transparent 70%),
+      #F3F5FB;
+    background-attachment:fixed;
+    color:var(--text);
+    font-family:var(--sans);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+    transition:background .3s ease, color .3s ease;
+  }
+
+  html[data-theme="dark"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(91,140,255,.10), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(183,156,255,.08), transparent 60%),
+      radial-gradient(ellipse 45% 40% at 100% 55%, rgba(255,143,192,.06), transparent 65%),
+      radial-gradient(ellipse 50% 45% at 0% 70%, rgba(91,140,255,.07), transparent 65%),
+      #0A0D12;
+  }
+  html[data-theme="orange"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(255,138,61,.12), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(255,107,92,.09), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 50% 100%, rgba(255,203,107,.08), transparent 65%),
+      #0B0A0A;
+  }
+  html[data-theme="watermelon"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(255,92,119,.12), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(76,175,125,.09), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 50% 100%, rgba(255,166,184,.07), transparent 65%),
+      #0A0C0A;
+  }
+  html[data-theme="rose"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(232,92,147,.12), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(245,153,190,.08), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 50% 100%, rgba(199,125,176,.07), transparent 65%),
+      #0C0A0C;
+  }
+  html[data-theme="emerald"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(46,204,143,.12), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(110,224,175,.08), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 50% 100%, rgba(74,184,154,.07), transparent 65%),
+      #080C0A;
+  }
+  html[data-theme="gold"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(201,162,39,.13), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(232,194,90,.09), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 50% 100%, rgba(176,141,62,.07), transparent 65%),
+      #0B0A07;
+  }
+  html[data-theme="navy"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(74,115,196,.13), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(125,160,224,.09), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 50% 100%, rgba(110,126,201,.07), transparent 65%),
+      #070A12;
+  }
+  html[data-theme="coffee"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(139,94,60,.13), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(192,138,92,.09), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 50% 100%, rgba(169,117,76,.07), transparent 65%),
+      #0B0806;
+  }
+  html[data-theme="nescafe"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(210,166,121,.13), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(232,194,154,.09), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 50% 100%, rgba(191,146,100,.07), transparent 65%),
+      #0C0906;
+  }
+  html[data-theme="darkred"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(179,58,58,.13), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(224,104,104,.09), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 50% 100%, rgba(166,69,90,.07), transparent 65%),
+      #0B0505;
+  }
+  html[data-theme="vanilla"] body{
+    background:
+      radial-gradient(ellipse 45% 35% at 10% 5%, rgba(232,217,181,.12), transparent 60%),
+      radial-gradient(ellipse 40% 35% at 90% 8%, rgba(245,233,200,.08), transparent 60%),
+      radial-gradient(ellipse 50% 45% at 50% 100%, rgba(201,185,138,.07), transparent 65%),
+      #0C0A06;
+  }
+
+  a{color:inherit;text-decoration:none;}
+  ::selection{background:var(--up);color:#FFFFFF;}
+
+  /* soft dashboard blobs — replaces the old dark grid */
+  body::before{
+    content:"";
+    position:fixed; inset:0;
+    background-image:
+      linear-gradient(var(--line-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size:80px 80px;
+    opacity:.5;
+    pointer-events:none;
+    z-index:0;
+    mask-image: radial-gradient(ellipse 65% 50% at 50% 0%, black 20%, transparent 80%);
+  }
+  html[data-theme="dark"] body::before, html[data-theme="orange"] body::before, html[data-theme="watermelon"] body::before, html[data-theme="rose"] body::before, html[data-theme="emerald"] body::before, html[data-theme="gold"] body::before, html[data-theme="navy"] body::before, html[data-theme="coffee"] body::before, html[data-theme="nescafe"] body::before, html[data-theme="darkred"] body::before, html[data-theme="vanilla"] body::before{ opacity:.35; }
+
+  .wrap{max-width:1080px; margin:0 auto; padding:0 28px; position:relative; z-index:1;}
+  .eyebrow{
+    font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--up-strong); font-weight:600; display:flex; align-items:center; gap:8px; margin-bottom:18px;
+  }
+  .eyebrow::before{content:"▍"; color:var(--up-strong);}
+  h1,h2,h3{font-family:var(--display); font-weight:600; letter-spacing:-0.01em;}
+  section{padding:88px 0; border-bottom:1px solid var(--line-soft); position:relative;}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:50;
+    background:rgba(255,255,255,.75); backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line-soft);
+    box-shadow:0 4px 28px -14px rgba(91,127,224,.20);
+    transition:background .3s ease;
+  }
+  html[data-theme="dark"] header{background:rgba(10,13,18,.72);}
+  html[data-theme="orange"] header{background:rgba(11,10,10,.72);}
+  html[data-theme="watermelon"] header{background:rgba(10,12,10,.72);}
+  html[data-theme="rose"] header{background:rgba(12,10,12,.72);}
+  html[data-theme="emerald"] header{background:rgba(8,12,10,.72);}
+  html[data-theme="gold"] header{background:rgba(11,10,7,.72);}
+  html[data-theme="navy"] header{background:rgba(7,10,18,.72);}
+  html[data-theme="coffee"] header{background:rgba(11,8,6,.72);}
+  html[data-theme="nescafe"] header{background:rgba(12,9,6,.72);}
+  html[data-theme="darkred"] header{background:rgba(11,5,5,.72);}
+  html[data-theme="vanilla"] header{background:rgba(12,10,6,.72);}
+
+  /* ---------- THEME SWITCH ---------- */
+  .theme-switch{display:flex; flex-wrap:wrap; align-items:center; gap:6px; padding:4px; border:1px solid var(--line); border-radius:14px; background:var(--bg-panel); max-width:150px;}
+  .theme-switch button{
+    width:16px; height:16px; border-radius:50%; border:1.5px solid var(--line); cursor:pointer;
+    padding:0; transition:transform .15s ease, border-color .15s ease;
+  }
+  .theme-switch button[data-theme-btn="light"]{background:#F3F5FB;}
+  .theme-switch button[data-theme-btn="dark"]{background:#0A0D12;}
+  .theme-switch button[data-theme-btn="orange"]{background:#0B0A0A; box-shadow:inset 0 0 0 3px #FF8A3D;}
+  .theme-switch button[data-theme-btn="watermelon"]{background:#0A0C0A; box-shadow:inset 0 0 0 3px #FF5C77;}
+  .theme-switch button[data-theme-btn="rose"]{background:#0C0A0C; box-shadow:inset 0 0 0 3px #E85C93;}
+  .theme-switch button[data-theme-btn="emerald"]{background:#080C0A; box-shadow:inset 0 0 0 3px #2ECC8F;}
+  .theme-switch button[data-theme-btn="gold"]{background:#0B0A07; box-shadow:inset 0 0 0 3px #C9A227;}
+  .theme-switch button[data-theme-btn="navy"]{background:#070A12; box-shadow:inset 0 0 0 3px #4A73C4;}
+  .theme-switch button[data-theme-btn="coffee"]{background:#0B0806; box-shadow:inset 0 0 0 3px #8B5E3C;}
+  .theme-switch button[data-theme-btn="nescafe"]{background:#0C0906; box-shadow:inset 0 0 0 3px #D2A679;}
+  .theme-switch button[data-theme-btn="darkred"]{background:#0B0505; box-shadow:inset 0 0 0 3px #B33A3A;}
+  .theme-switch button[data-theme-btn="vanilla"]{background:#0C0A06; box-shadow:inset 0 0 0 3px #E8D9B5;}
+  .theme-switch button:hover{transform:scale(1.15);}
+  .theme-switch button.active{border-color:var(--up); box-shadow:0 0 0 2px var(--up-dim);}
+
+  /* ---------- SOUND TOGGLE ---------- */
+  .sound-toggle{
+    width:30px; height:30px; border-radius:50%; border:1px solid var(--line); background:var(--bg-panel);
+    color:var(--text-dim); font-size:13px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+    transition:border-color .15s ease, color .15s ease, transform .15s ease;
+  }
+  .sound-toggle:hover{border-color:var(--up); color:var(--up); transform:scale(1.08);}
+  .sound-toggle.muted{opacity:.55;}
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:16px 28px; max-width:1080px; margin:0 auto;}
+  .logo{font-family:var(--mono); font-size:14px; font-weight:600; letter-spacing:.04em; color:var(--text);}
+  .logo span{color:var(--up);}
+  .navlinks{display:flex; gap:28px; font-family:var(--mono); font-size:12.5px; text-transform:uppercase; letter-spacing:.08em;}
+  .navlinks a{color:var(--text-dim); transition:color .15s;}
+  .navlinks a:hover{color:var(--up);}
+  .status-pill{
+    display:flex; align-items:center; gap:7px; font-family:var(--mono); font-size:11.5px;
+    color:var(--up-strong); font-weight:600; background:var(--up-dim); border:1px solid transparent; padding:6px 11px; border-radius:20px;
+    text-transform:uppercase; letter-spacing:.08em; white-space:nowrap;
+  }
+  .dot{width:6px; height:6px; border-radius:50%; background:var(--up); box-shadow:0 0 0 0 rgba(91,127,224,.45); animation:pulse 2s infinite;}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(91,127,224,.40);}
+    70%{box-shadow:0 0 0 7px rgba(91,127,224,0);}
+    100%{box-shadow:0 0 0 0 rgba(91,127,224,0);}
+  }
+  .navtoggle{display:none; flex-direction:column; gap:4px; background:none; border:none; cursor:pointer; padding:6px;}
+  .navtoggle span{width:20px; height:2px; background:var(--text);}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:150px 0 90px; border-bottom:1px solid var(--line-soft); overflow:hidden;}
+  .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center;}
+  .hero h1{font-size:52px; line-height:1.06; color:var(--text);}
+  .role-line{
+    font-family:var(--mono); font-size:14.5px; color:var(--up); margin-top:18px;
+    letter-spacing:.02em;
+  }
+  .role-line .sep{color:var(--text-dimmer); margin:0 6px;}
+  .hero p.lede{color:var(--text-dim); font-size:16px; max-width:520px; margin-top:22px;}
+  .cta-row{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
+  .btn{
+    font-family:var(--mono); font-size:13px; letter-spacing:.04em; text-transform:uppercase;
+    padding:13px 22px; border-radius:var(--radius); transition:all .15s ease; display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn-primary{background:var(--up); color:#FFFFFF; font-weight:600; box-shadow:0 12px 26px -10px rgba(91,127,224,.55);}
+  .btn-primary:hover{background:#4A6EDB;}
+  .btn-ghost{border:1px solid var(--line); color:var(--text); background:var(--bg-panel);}
+  .btn-ghost:hover{border-color:var(--up); color:var(--up);}
+
+  .topo{width:100%; height:auto; display:block;}
+  .topo .node-label{font-family:var(--mono); font-size:9px; fill:var(--text-dim); font-weight:500; letter-spacing:.05em;}
+  .topo .link{stroke:var(--up-dim); stroke-width:1.7;}
+  .topo .link-active{stroke:var(--up); stroke-width:1.7;}
+  .topo .node-ring{fill:none; stroke:var(--up-dim); stroke-width:1.6;}
+  .topo .node-core{fill:var(--bg-panel); stroke:var(--up); stroke-width:1.8;}
+  .packet{fill:var(--up); filter:drop-shadow(0 0 4px rgba(91,127,224,.55));}
+
+  /* ---------- ACHIEVEMENTS STRIP ---------- */
+  .stats-strip{padding:56px 0; border-bottom:1px solid var(--line-soft);}
+  .stats-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+  .stat-cell{background:var(--bg-panel); padding:26px 22px; border:1px solid var(--line); border-radius:14px; box-shadow:0 14px 30px -18px rgba(91,127,224,.22);}
+  .stat-cell .num{font-family:var(--display); font-size:30px; color:var(--up); font-weight:700;}
+  .stat-cell:nth-child(1) .num{color:var(--up);}
+  .stat-cell:nth-child(2) .num{color:var(--purple);}
+  .stat-cell:nth-child(3) .num{color:var(--pink);}
+  .stat-cell:nth-child(4) .num{color:var(--warn);}
+  .stat-cell .lbl{font-family:var(--mono); font-size:11.5px; color:var(--text-dim); margin-top:6px; text-transform:uppercase; letter-spacing:.03em;}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid; grid-template-columns:1fr 1.3fr; gap:56px;}
+  .about-grid h2{font-size:26px; margin-bottom:0;}
+  .about-grid p{color:var(--text-dim); font-size:15.5px; margin-top:16px;}
+  .cert-list{margin-top:26px; display:flex; flex-wrap:wrap; gap:9px;}
+  .cert-chip{
+    font-family:var(--mono); font-size:11.5px; color:var(--text); background:var(--bg-panel);
+    border:1px solid var(--line); padding:7px 12px; border-radius:20px; letter-spacing:.02em;
+  }
+  .cert-chip.ext{color:var(--text-dimmer);}
+
+  /* ---------- EXPERIENCE ---------- */
+  .timeline{margin-top:36px; border-left:1px solid var(--line); padding-left:32px; display:flex; flex-direction:column; gap:52px;}
+  .tl-item{position:relative;}
+  .tl-item::before{
+    content:""; position:absolute; left:-37.5px; top:4px; width:9px; height:9px; border-radius:50%;
+    background:var(--bg); border:2px solid var(--up);
+  }
+  .tl-date{font-family:var(--mono); font-size:11.5px; color:var(--up-strong); font-weight:600; text-transform:uppercase; letter-spacing:.05em;}
+  .tl-role{font-family:var(--display); font-size:19px; margin-top:8px; color:var(--text);}
+  .tl-org{color:var(--text-dim); font-size:14px; margin-top:3px;}
+  .tl-org .tag{font-family:var(--mono); font-size:10.5px; color:var(--text-dimmer); border:1px solid var(--line); padding:2px 7px; border-radius:12px; margin-left:8px; text-transform:uppercase;}
+  .tl-list{margin-top:14px; display:flex; flex-direction:column; gap:8px;}
+  .tl-list li{list-style:none; padding-left:18px; position:relative; color:var(--text-dim); font-size:14.5px;}
+  .tl-list li::before{content:"›"; position:absolute; left:0; color:var(--up);}
+
+  /* ---------- PROJECTS ---------- */
+  .proj-grid{margin-top:36px; display:flex; flex-direction:column; gap:16px;}
+  .proj-card{background:var(--bg-panel); padding:32px; display:grid; grid-template-columns:220px 1fr; gap:28px; border:1px solid var(--line); border-radius:16px; box-shadow:0 16px 34px -20px rgba(91,127,224,.20);}
+  .proj-idx{font-family:var(--mono); font-size:11px; color:var(--text-dimmer); text-transform:uppercase; letter-spacing:.06em;}
+  .proj-name{font-family:var(--display); font-size:20px; margin-top:10px; color:var(--text);}
+  .proj-list{margin-top:14px; display:flex; flex-direction:column; gap:7px;}
+  .proj-list li{list-style:none; padding-left:16px; position:relative; color:var(--text-dim); font-size:14px;}
+  .proj-list li::before{content:"—"; position:absolute; left:0; color:var(--line);}
+  .tag-row{display:flex; flex-wrap:wrap; gap:7px; margin-top:18px;}
+  .tag{font-family:var(--mono); font-size:10.5px; color:var(--up); background:rgba(91,127,224,.08); border:1px solid var(--up-dim); padding:4px 9px; border-radius:3px; text-transform:uppercase; letter-spacing:.03em;}
+
+  /* ---------- SKILLS ---------- */
+  .skills-grid{margin-top:36px; display:grid; grid-template-columns:repeat(2,1fr); gap:36px 48px;}
+  .skill-group h3{font-family:var(--mono); font-size:12px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.06em; font-weight:500; padding-bottom:12px; border-bottom:1px solid var(--line);}
+  .skill-tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;}
+  .skill-tag{font-family:var(--mono); font-size:12px; color:var(--text); background:var(--bg-panel); border:1px solid var(--line); padding:6px 11px; border-radius:3px;}
+
+  .split-row{display:grid; grid-template-columns:1fr 1fr; gap:48px; margin-top:56px;}
+  .mini-h{font-family:var(--mono); font-size:12px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.06em; padding-bottom:12px; border-bottom:1px solid var(--line);}
+  .mini-list{margin-top:16px; display:flex; flex-direction:column; gap:9px;}
+  .mini-list li{list-style:none; color:var(--text-dim); font-size:14px; padding-left:16px; position:relative;}
+  .mini-list li::before{content:"›"; position:absolute; left:0; color:var(--up);}
+  .lang-row{display:flex; gap:28px; margin-top:16px;}
+  .lang-item{font-family:var(--mono); font-size:14px; color:var(--text); display:flex; align-items:center; gap:8px;}
+  .lang-bar{width:60px; height:4px; background:var(--line); border-radius:2px; overflow:hidden;}
+  .lang-bar i{display:block; height:100%; background:var(--up);}
+
+  /* ---------- CONTACT ---------- */
+  .contact{border-bottom:none;}
+  .contact-inner{
+    background:var(--bg-panel); border:1px solid var(--line); border-radius:4px;
+    padding:56px; display:grid; grid-template-columns:1.2fr 1fr; gap:40px; align-items:center;
+  }
+  .contact h2{font-size:28px;}
+  .contact p{color:var(--text-dim); margin-top:14px; font-size:15px; max-width:440px;}
+  .contact-links{display:flex; flex-direction:column; gap:14px; font-family:var(--mono); font-size:14px;}
+  .contact-links a{display:flex; align-items:center; gap:10px; color:var(--text); padding:12px 16px; border:1px solid var(--line); border-radius:3px; transition:all .15s;}
+  .contact-links a:hover{border-color:var(--up); color:var(--up);}
+  .contact-links .k{color:var(--text-dimmer); min-width:60px; display:inline-block;}
+
+  footer{padding:32px 0; text-align:center;}
+  footer p{font-family:var(--mono); font-size:11px; color:var(--text-dimmer); letter-spacing:.04em; text-transform:uppercase;}
+
+  @media (max-width:1000px){
+    .status-pill{display:none;}
+    .theme-switch button{width:13px; height:13px;}
+    .theme-switch{gap:5px; padding:3px;}
+  }
+
+  @media (max-width:860px){
+    .hero-grid{grid-template-columns:1fr;}
+    .topo{display:none;}
+    .hero{padding-top:130px;}
+    .hero h1{font-size:38px;}
+    .stats-grid{grid-template-columns:repeat(2,1fr);}
+    .about-grid{grid-template-columns:1fr; gap:24px;}
+    .proj-card{grid-template-columns:1fr;}
+    .skills-grid{grid-template-columns:1fr;}
+    .split-row{grid-template-columns:1fr;}
+    .contact-inner{grid-template-columns:1fr; padding:36px 24px;}
+    .navlinks{position:fixed; top:60px; left:0; right:0; background:var(--bg); flex-direction:column; padding:20px 28px; gap:18px; border-bottom:1px solid var(--line-soft); display:none;}
+    .navlinks.open{display:flex;}
+    .navtoggle{display:flex;}
+  }
+  /* ---------- SKILL FEATURE CARDS (Linux / SQL) ---------- */
+  .skill-feature{
+    margin-top:16px; background:var(--bg-panel); border:1px solid var(--line); border-radius:6px;
+    overflow:hidden; box-shadow:0 16px 32px -22px rgba(0,0,0,.6);
+    transition:border-color .2s ease, transform .2s ease;
+  }
+  .skill-feature:hover{border-color:var(--up-dim); transform:translateY(-2px);}
+  .skill-feature-head{
+    display:flex; align-items:center; gap:9px; padding:11px 14px;
+    border-bottom:1px solid var(--line-soft); background:var(--bg-panel-alt);
+  }
+  .skill-feature-head .dot-row{display:flex; gap:5px;}
+  .skill-feature-head .cdot{width:7px; height:7px; border-radius:50%; background:var(--text-dimmer); opacity:.5;}
+  .skill-feature-head .fname{
+    font-family:var(--mono); font-size:11.5px; color:var(--text-dimmer);
+    letter-spacing:.03em; margin-left:2px;
+  }
+  .skill-feature-body{padding:14px 16px; display:flex; flex-direction:column; gap:8px;}
+  .code-line{font-family:var(--mono); font-size:12.5px; color:var(--text-dim); white-space:pre; overflow-x:auto;}
+  .code-line .kw{color:var(--up); font-weight:500;}
+  .code-line .arg{color:var(--text);}
+  .code-line .cm{color:var(--text-dimmer); font-style:italic;}
+  .code-line .prompt{color:var(--warn); margin-right:2px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+
+  /* ---------- SCROLL PROGRESS (signal strength bar) ---------- */
+  .progress{position:fixed; top:0; left:0; height:2px; width:0%; background:var(--up); z-index:60; box-shadow:0 0 8px rgba(91,127,224,.45); transition:width .08s linear;}
+
+  /* ---------- ACTIVE NAV STATE ---------- */
+  .navlinks a{position:relative; padding-bottom:3px;}
+  .navlinks a::after{content:""; position:absolute; left:0; bottom:-1px; width:0; height:1px; background:var(--up); transition:width .2s ease;}
+  .navlinks a.active{color:var(--up-strong); font-weight:600;}
+  .navlinks a.active::after{width:100%;}
+
+  /* ---------- SCROLL REVEAL ---------- */
+  [data-reveal]{opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease;}
+  [data-reveal].in-view{opacity:1; transform:translateY(0);}
+  [data-reveal-stagger] > *{opacity:0; transform:translateY(16px); transition:opacity .55s ease, transform .55s ease;}
+  [data-reveal-stagger].in-view > *{opacity:1; transform:translateY(0);}
+  [data-reveal-stagger].in-view > *:nth-child(1){transition-delay:.03s;}
+  [data-reveal-stagger].in-view > *:nth-child(2){transition-delay:.09s;}
+  [data-reveal-stagger].in-view > *:nth-child(3){transition-delay:.15s;}
+  [data-reveal-stagger].in-view > *:nth-child(4){transition-delay:.21s;}
+  [data-reveal-stagger].in-view > *:nth-child(5){transition-delay:.27s;}
+  [data-reveal-stagger].in-view > *:nth-child(6){transition-delay:.33s;}
+
+  /* ---------- HERO CONSOLE (log tail) ---------- */
+  .console{
+    margin-top:36px; background:var(--bg-panel); border:1px solid var(--line); border-radius:4px;
+    padding:16px 18px; font-family:var(--mono); font-size:12px; max-width:480px;
+    box-shadow:0 20px 40px -20px rgba(0,0,0,.5);
+  }
+  .console-head{display:flex; align-items:center; gap:8px; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid var(--line-soft); color:var(--text-dimmer); letter-spacing:.04em;}
+  .console-head .dot-row{display:flex; gap:5px; margin-right:6px;}
+  .console-head .cdot{width:7px; height:7px; border-radius:50%; background:var(--text-dimmer); opacity:.5;}
+  .console-body{display:flex; flex-direction:column; gap:6px; min-height:96px;}
+  .console-line{color:var(--text-dim); opacity:0; animation:typeIn .4s ease forwards;}
+  .console-line .ok{color:var(--up);}
+  .console-line .path{color:var(--text-dimmer);}
+  .caret{display:inline-block; width:6px; height:12px; background:var(--up); margin-left:2px; vertical-align:middle; animation:blink 1s steps(1) infinite;}
+  @keyframes typeIn{from{opacity:0; transform:translateY(3px);} to{opacity:1; transform:translateY(0);}}
+  @keyframes blink{0%,49%{opacity:1;} 50%,100%{opacity:0;}}
+
+  /* ---------- STAT COUNT-UP ---------- */
+  .stat-cell .num{font-variant-numeric:tabular-nums;}
+
+  /* ---------- TOPOLOGY GLOW FOLLOW ---------- */
+  .topo-wrap{position:relative;}
+  .topo-glow{
+    position:absolute; width:260px; height:260px; border-radius:50%;
+    background:radial-gradient(circle, rgba(91,127,224,.10), transparent 70%);
+    pointer-events:none; transform:translate(-50%,-50%); left:50%; top:40%;
+    transition:left .3s ease, top .3s ease; filter:blur(4px);
+  }
+
+  /* ---------- CARD HOVER LIFT ---------- */
+  .proj-card, .stat-cell, .cert-chip, .skill-tag{transition:background .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease;}
+  .proj-card:hover{transform:translateY(-2px); box-shadow:0 20px 40px -18px rgba(91,127,224,.28);}
+  .stat-cell:hover{transform:translateY(-2px); box-shadow:0 18px 34px -16px rgba(91,127,224,.26);}
+  .cert-chip:hover, .skill-tag:hover{border-color:var(--up); color:var(--up); transform:translateY(-1px);}
+
+  /* ---------- DEEP DIVE SECTION ---------- */
+  .dd-intro{color:var(--text-dim); font-size:15px; max-width:640px; margin-top:14px;}
+  .dd-block{margin-top:58px;}
+  .dd-block:first-of-type{margin-top:36px;}
+  .dd-head{display:flex; align-items:baseline; gap:12px; margin-bottom:22px; flex-wrap:wrap;}
+  .dd-head h3{font-family:var(--display); font-size:20px; color:var(--text);}
+  .dd-head .dd-tag{font-family:var(--mono); font-size:11px; color:var(--up-strong); font-weight:600; background:var(--up-dim); border:1px solid transparent; padding:3px 9px; border-radius:12px; text-transform:uppercase; letter-spacing:.04em;}
+  .dd-caption{font-family:var(--mono); font-size:10.5px; color:var(--text-dimmer); text-align:center; letter-spacing:.05em; margin-top:2px;}
+
+  .ad-diagram-wrap{background:var(--bg-panel); border:1px solid var(--line); border-radius:6px; padding:28px 20px 18px;}
+
+  /* ---------- HACKER TERMINAL (Linux visual) ---------- */
+  .hack-wrap{margin:26px 0 34px;}
+  .hack-frame{
+    position:relative; height:200px; border-radius:14px; overflow:hidden;
+    background:#040604; border:1px solid var(--line);
+    box-shadow:0 18px 38px -20px rgba(0,0,0,.5);
+  }
+  .hack-rain{position:absolute; inset:0; display:flex; justify-content:space-between; padding:0 2px;
+    mask-image:linear-gradient(to bottom, transparent, black 20%, black 85%, transparent);
+    -webkit-mask-image:linear-gradient(to bottom, transparent, black 20%, black 85%, transparent);
+  }
+  .hack-col{flex:1; font-family:var(--mono); font-size:11px; line-height:14px; color:var(--up);
+    white-space:pre; text-align:center; opacity:.5; will-change:transform;
+    animation-name:rainFall; animation-timing-function:linear; animation-iteration-count:infinite;
+  }
+  @keyframes rainFall{ from{transform:translateY(-60%);} to{transform:translateY(60%);} }
+  .hack-overlay{
+    position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center;
+    padding:22px 26px; background:linear-gradient(180deg, rgba(4,6,4,.15), rgba(4,6,4,.6) 65%, rgba(4,6,4,.25));
+  }
+  .hack-line{font-family:var(--mono); font-size:13px; color:#CFE8D8; opacity:.85; margin-bottom:8px;}
+  .hack-line.ok{color:var(--up); font-weight:600;}
+  .hack-overlay .caret{display:inline-block; width:7px; height:14px; background:var(--up); margin-left:4px; vertical-align:middle; animation:blink 1s steps(1) infinite;}
+
+
+  /* Linux cheat grid */
+  .cheat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+  .cheat-card{background:var(--bg-panel); border:1px solid var(--line); border-radius:6px; overflow:hidden; transition:border-color .2s ease, transform .2s ease;}
+  .cheat-card:hover{border-color:var(--up-dim); transform:translateY(-2px);}
+  .cheat-card-head{padding:9px 12px; background:var(--bg-panel-alt); border-bottom:1px solid var(--line-soft); font-family:var(--mono); font-size:10.5px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.05em; display:flex; align-items:center; gap:6px;}
+  .cheat-card-head::before{content:"▸"; color:var(--up);}
+  .cheat-card-body{padding:12px; display:flex; flex-direction:column; gap:6px;}
+  .cheat-card-body .code-line{font-size:11.3px;}
+
+  /* SQL join grid */
+  .join-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+  .join-card{background:var(--bg-panel); border:1px solid var(--line); border-radius:6px; padding:16px; text-align:center; transition:border-color .2s ease, transform .2s ease;}
+  .join-card:hover{border-color:var(--up-dim); transform:translateY(-2px);}
+  .join-card h4{font-family:var(--mono); font-size:12px; color:var(--up); text-transform:uppercase; letter-spacing:.04em; margin-bottom:4px;}
+  .join-card .desc{font-size:11.5px; color:var(--text-dim); min-height:32px; margin-bottom:10px;}
+  .venn{width:100%; max-width:140px; margin:0 auto 12px;}
+  .venn-outline{fill:none; stroke:var(--line); stroke-width:1.5;}
+  .venn-fill{fill:var(--up); fill-opacity:.3; stroke:var(--up); stroke-width:1.5;}
+  .join-card .code-line{font-size:10.6px; text-align:left; white-space:normal; word-break:break-word;}
+  .join-note{font-family:var(--mono); font-size:12px; color:var(--text-dimmer); margin-top:20px; text-align:center;}
+  .join-note b{color:var(--text-dim); font-weight:500;}
+
+  @media (max-width:860px){
+    .cheat-grid{grid-template-columns:1fr 1fr;}
+    .join-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:560px){
+    .cheat-grid{grid-template-columns:1fr;}
+    .join-grid{grid-template-columns:1fr;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    [data-reveal], [data-reveal-stagger] > *{opacity:1 !important; transform:none !important;}
+  }
+
+  /* ---------- SIDE DOT NAV (desktop) ---------- */
+  .dotnav{
+    position:fixed; right:26px; top:50%; transform:translateY(-50%); z-index:40;
+    display:flex; flex-direction:column; gap:14px;
+  }
+  .dotnav a{
+    width:8px; height:8px; border-radius:50%; background:var(--text-dimmer); opacity:.45; display:block;
+    position:relative; transition:background .2s ease, transform .2s ease, opacity .2s ease;
+  }
+  .dotnav a::after{
+    content:attr(data-label); position:absolute; right:18px; top:50%; transform:translateY(-50%);
+    font-family:var(--mono); font-size:10.5px; color:var(--text-dim); white-space:nowrap;
+    opacity:0; pointer-events:none; transition:opacity .15s ease;
+    background:var(--bg-panel); border:1px solid var(--line); padding:3px 8px; border-radius:6px;
+    box-shadow:0 8px 20px -10px rgba(91,127,224,.3);
+  }
+  .dotnav a:hover::after{opacity:1;}
+  .dotnav a.active{background:var(--up); opacity:1; transform:scale(1.3);}
+  @media (max-width:1240px){ .dotnav{display:none;} }
+
+  /* ---------- SOFT DASHBOARD POLISH ---------- */
+  .btn{border-radius:10px;}
+  .tag, .skill-tag{border-radius:8px;}
+  .contact-links a{border-radius:10px;}
+  .contact-inner{border-radius:18px !important; box-shadow:0 24px 48px -24px rgba(91,127,224,.28);}
+  .console, .skill-feature{border-radius:14px !important; box-shadow:0 16px 34px -20px rgba(91,127,224,.20);}
+  .cheat-card, .join-card{border-radius:14px; box-shadow:0 14px 28px -18px rgba(91,127,224,.16);}
+  .ad-diagram-wrap{border-radius:18px !important; box-shadow:0 18px 38px -20px rgba(91,127,224,.20);}
+  .topo-glow{background:radial-gradient(circle, rgba(167,139,250,.16), transparent 70%);}
+
+  /* ---------- CERTIFICATION LEDGER ---------- */
+  .cert-ledger{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:22px;}
+  .cert-row{
+    background:var(--bg-panel); border:1px solid var(--line); border-radius:14px; padding:14px 16px;
+    display:flex; align-items:flex-start; gap:12px;
+    box-shadow:0 14px 28px -18px rgba(91,127,224,.16);
+    transition:border-color .2s ease, transform .2s ease;
+  }
+  .cert-row:hover{border-color:var(--up-dim); transform:translateY(-2px);}
+  .cert-row .cr-no{font-family:var(--mono); font-size:11px; color:var(--text-dimmer); min-width:22px; padding-top:2px;}
+  .cert-row .cr-main{flex:1; min-width:0;}
+  .cert-row .cr-name{font-size:13.5px; color:var(--text); font-weight:500; line-height:1.35;}
+  .cert-row .cr-meta{font-family:var(--mono); font-size:10.8px; color:var(--text-dim); margin-top:5px; letter-spacing:.02em;}
+  .cert-row .cr-meta .iss{color:var(--up-strong);}
+  .cert-row .cr-id{font-family:var(--mono); font-size:10px; color:var(--text-dimmer); margin-top:3px; word-break:break-all;}
+  .cert-row .cr-id a{color:var(--text-dimmer); border-bottom:1px dotted var(--line);}
+  .cert-row .cr-id a:hover{color:var(--up);}
+  .track-head{
+    display:flex; align-items:center; gap:10px; margin-top:34px; flex-wrap:wrap;
+    font-family:var(--mono); font-size:11.5px; color:var(--text-dim);
+    text-transform:uppercase; letter-spacing:.06em; padding-bottom:10px; border-bottom:1px solid var(--line);
+  }
+  .track-head::before{content:"▍"; color:var(--up-strong);}
+  .track-head .count{margin-left:auto; color:var(--text-dimmer); text-transform:none; letter-spacing:.02em;}
+  @media (max-width:860px){ .cert-ledger{grid-template-columns:1fr;} }
+
+  /* ---------- NAV FIT (7 links + theme switch) ---------- */
+  .logo{white-space:nowrap; flex:0 0 auto;}
+  .navlinks a{white-space:nowrap;}
+  .nav > div:last-child{flex:0 0 auto;}
+  .theme-switch{flex:0 0 auto; width:150px;}
+  @media (min-width:861px){
+    .logo{margin-right:26px;}
+    .navlinks{gap:22px; flex:1 1 auto; justify-content:center;}
+  }
+  @media (min-width:861px) and (max-width:1340px){ .logo{margin-right:18px;} .navlinks{gap:15px; font-size:11.6px;} }
+  @media (min-width:861px) and (max-width:1180px){ .logo{margin-right:12px;} .navlinks{gap:11px; font-size:10.8px;} }
+
+  /* ---------- AVATAR ---------- */
+  .avatar-wrap{display:flex; align-items:center; gap:16px; margin-bottom:20px;}
+  .avatar-wrap img{
+    width:62px; height:62px; border-radius:50%; object-fit:cover;
+    border:2px solid var(--up-dim); box-shadow:0 10px 24px -12px rgba(91,127,224,.5);
+  }
+  .avatar-wrap .av-meta{font-family:var(--mono); font-size:11.5px; color:var(--text-dim); line-height:1.7;}
+  .avatar-wrap .av-meta b{color:var(--up-strong); font-weight:600;}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<nav class="dotnav" id="dotnav">
+  <a href="#top" data-label="Top" class="active"></a>
+  <a href="#about" data-label="About"></a>
+  <a href="#experience" data-label="Experience"></a>
+  <a href="#projects" data-label="Projects"></a>
+  <a href="#skills" data-label="Skills"></a>
+  <a href="#deepdive" data-label="Deep Dive"></a>
+  <a href="#certifications" data-label="Certifications"></a>
+  <a href="#contact" data-label="Contact"></a>
+</nav>
+
+<header>
+  <div class="nav">
+    <div class="logo">MAZIN <span>ABOUD</span></div>
+    <nav class="navlinks" id="navlinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#deepdive">Deep Dive</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <div class="theme-switch" id="themeSwitch" role="group" aria-label="Theme">
+        <button data-theme-btn="light" title="Light" aria-label="Light theme"></button>
+        <button data-theme-btn="dark" title="Dark" aria-label="Dark theme"></button>
+        <button data-theme-btn="orange" title="Amber" aria-label="Amber theme"></button>
+        <button data-theme-btn="watermelon" title="Watermelon" aria-label="Watermelon theme"></button>
+        <button data-theme-btn="rose" title="Rose" aria-label="Rose theme"></button>
+        <button data-theme-btn="emerald" title="Emerald" aria-label="Emerald theme"></button>
+        <button data-theme-btn="gold" title="Gold" aria-label="Gold theme"></button>
+        <button data-theme-btn="navy" title="Navy" aria-label="Navy theme"></button>
+        <button data-theme-btn="coffee" title="Coffee" aria-label="Coffee theme"></button>
+        <button data-theme-btn="nescafe" title="Nescaf&eacute;" aria-label="Nescafe theme"></button>
+        <button data-theme-btn="darkred" title="Dark Red" aria-label="Dark Red theme"></button>
+        <button data-theme-btn="vanilla" title="Vanilla" aria-label="Vanilla theme"></button>
+      </div>
+      <button class="sound-toggle" id="soundToggle" title="Toggle click sound" aria-label="Toggle click sound">&#128266;</button>
+      <div class="status-pill"><span class="dot"></span>Open to work</div>
+      <button class="navtoggle" id="navtoggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Cairo, Egypt &middot; Open to relocation</div>
+        <div class="avatar-wrap">
+          <img src="avatar-web.jpg" alt="Mazin BadrEldin Ali Aboud" width="62" height="62">
+          <div class="av-meta">
+            <b>CCNA 200-301</b> &middot; Google IT Support<br>
+            Google Network Security &middot; <b>27 certifications</b>
+          </div>
+        </div>
+        <h1>Mazin<br>BadrEldin</h1>
+        <div class="role-line">IT TECHNICAL SUPPORT<span class="sep">/</span>HELP DESK ENGINEER<span class="sep">/</span>NETWORK ADMINISTRATION</div>
+        <p class="lede">IT Technical Support Specialist with 1+ year of hands-on helpdesk and network administration in a high-volume academic environment &mdash; 500+ end users, 40+ tickets a day, full SLA compliance &mdash; backed by CCNA 200-301 and validated in self-built labs on Cisco Packet Tracer, VMware, and MikroTik RouterOS.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-primary">Get in touch &rarr;</a>
+          <a href="#projects" class="btn btn-ghost">View projects</a>
+        </div>
+
+        <div class="console">
+          <div class="console-head"><span class="dot-row"><span class="cdot"></span><span class="cdot"></span><span class="cdot"></span></span>helpdesk.log</div>
+          <div class="console-body" id="consoleBody"></div>
+        </div>
+      </div>
+      <div class="topo-wrap" id="topoWrap">
+        <div class="topo-glow" id="topoGlow"></div>
+        <svg class="topo" viewBox="0 0 420 360" xmlns="http://www.w3.org/2000/svg">
+          <!-- links -->
+          <line class="link" x1="210" y1="60" x2="90" y2="150"/>
+          <line class="link" x1="210" y1="60" x2="330" y2="150"/>
+          <line class="link" x1="210" y1="60" x2="210" y2="160"/>
+          <line class="link-active" id="lnk1" x1="90" y1="150" x2="60" y2="250"/>
+          <line class="link" x1="90" y1="150" x2="130" y2="250"/>
+          <line class="link" x1="210" y1="160" x2="180" y2="250"/>
+          <line class="link" x1="210" y1="160" x2="250" y2="250"/>
+          <line class="link" x1="330" y1="150" x2="300" y2="250"/>
+          <line class="link" x1="330" y1="150" x2="360" y2="250"/>
+
+          <!-- core -->
+          <circle class="node-ring" cx="210" cy="60" r="20"/>
+          <circle class="node-core" cx="210" cy="60" r="12"/>
+          <text class="node-label" x="234" y="57">CORE R1</text>
+          <text class="node-label" x="234" y="68">RIPv2 / NAT</text>
+
+          <!-- distribution -->
+          <circle class="node-ring" cx="90" cy="150" r="15"/>
+          <circle class="node-core" cx="90" cy="150" r="8"/>
+          <text class="node-label" x="46" y="132">SW-ADMIN</text>
+
+          <circle class="node-ring" cx="210" cy="160" r="15"/>
+          <circle class="node-core" cx="210" cy="160" r="8"/>
+          <text class="node-label" x="222" y="185">SW-ACADEMIC</text>
+
+          <circle class="node-ring" cx="330" cy="150" r="15"/>
+          <circle class="node-core" cx="330" cy="150" r="8"/>
+          <text class="node-label" x="320" y="132">BRANCH R2</text>
+
+          <!-- access -->
+          <circle class="node-ring" cx="60" cy="250" r="10"/>
+          <circle class="node-ring" cx="130" cy="250" r="10"/>
+          <circle class="node-ring" cx="180" cy="250" r="10"/>
+          <circle class="node-ring" cx="250" cy="250" r="10"/>
+          <circle class="node-ring" cx="300" cy="250" r="10"/>
+          <circle class="node-ring" cx="360" cy="250" r="10"/>
+
+          <text class="node-label" x="30" y="290">VLAN 10 / 30</text>
+          <text class="node-label" x="150" y="290">VLAN 70 / 80</text>
+          <text class="node-label" x="268" y="290">VLAN 90 / 100</text>
+
+          <text class="node-label" x="80" y="330" style="font-size:10px; fill:#4A64C4; font-weight:600;">10 VLANS &middot; ROUTER-ON-A-STICK &middot; DHCP PER VLAN</text>
+
+          <!-- animated packet -->
+          <circle class="packet" r="3.2">
+            <animateMotion dur="3.5s" repeatCount="indefinite" path="M210,60 L90,150 L60,250"/>
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-strip">
+    <div class="stats-grid" data-reveal-stagger>
+      <div class="stat-cell"><div class="num" data-count="500" data-suffix="+">0</div><div class="lbl">End users supported</div></div>
+      <div class="stat-cell"><div class="num" data-count="2000" data-suffix="+">0</div><div class="lbl">Issues documented</div></div>
+      <div class="stat-cell"><div class="num" data-count="65" data-suffix="%">0%</div><div class="lbl">Problem resolution rate</div></div>
+      <div class="stat-cell"><div class="num" data-count="27" data-suffix="">0</div><div class="lbl">Verified certifications</div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid" data-reveal>
+      <div class="eyebrow" style="margin-bottom:0;">About</div>
+      <div>
+        <h2>Tickets closed, networks built, everything documented.</h2>
+        <p>IT Technical Support Specialist with 1+ year of hands-on helpdesk and network administration experience in a high-volume academic environment, backed by CCNA 200-301 certification. Skilled in Windows 10/11, Windows Server, and Linux support, ITIL-aligned incident management, and enterprise networking (OSPF, VLAN, ACL) &mdash; validated through both production support work and self-built lab infrastructure using Cisco Packet Tracer, VMware, and MikroTik RouterOS.</p>
+        <p>Supported 500+ end users while consistently meeting SLA targets, documented 2,000+ issues into a knowledge base that raised problem resolution to 65%, and cut Tier 1/2 escalations by 25% with a purpose-built troubleshooting guide. Outside the ticket queue I build what I support: multi-VLAN campus topologies, virtualized Ubuntu servers, and full-stack PHP/MySQL applications.</p>
+        <p>Currently looking for an IT Support, Help Desk, NOC, or Network Administration role &mdash; open to relocation and to remote/hybrid setups.</p>
+        <div class="cert-list">
+          <span class="cert-chip">CCNA 200-301</span>
+          <span class="cert-chip">Google IT Support</span>
+          <span class="cert-chip">Google Network Security</span>
+          <span class="cert-chip">AI Fundamentals with Claude</span>
+          <span class="cert-chip">Cybersecurity Threat Vectors</span>
+          <span class="cert-chip">Networking &amp; Cloud Computing</span>
+          <span class="cert-chip">Google AI Fundamentals</span>
+          <span class="cert-chip ext">Claude Code in Action</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="eyebrow">Experience &amp; Training</div>
+    <div class="timeline" data-reveal-stagger>
+
+      <div class="tl-item">
+        <div class="tl-date">Apr 2025 &mdash; Jun 2026 &middot; 1 yr 3 mos</div>
+        <div class="tl-role">IT Technical Support Specialist</div>
+        <div class="tl-org">The Future University &mdash; Cairo, Egypt <span class="tag">Full-time &middot; Hybrid</span></div>
+        <ul class="tl-list">
+          <li>Resolved 40+ daily academic, financial, and technical support tickets via the university Help Desk system &mdash; investigating issues, executing authorized fixes, and escalating complex cases while maintaining full SLA compliance</li>
+          <li>Guided 500+ university staff and students on institutional digital services, reducing repeat assistance requests by an estimated 15% through clearer self-service instructions</li>
+          <li>Ensured uninterrupted online examinations by administering the SMOWL proctoring platform, providing Tier 1/2 support to 500+ users on Windows 10/11 via Zoom and AnyDesk</li>
+          <li>Increased problem resolution rate to 65% by documenting 2,000+ issues across technical support and voice assistance platforms</li>
+          <li>Streamlined the ticket closure process, achieving a 30% increase in ticket closures through efficient resolution and documentation</li>
+          <li>Developed a comprehensive SMOWL troubleshooting guide, decreasing Tier 1/2 escalations by 25% and improving first-contact resolution</li>
+        </ul>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">Jan 2026</div>
+        <div class="tl-role">Hybrid Workshop Technical Operator</div>
+        <div class="tl-org">The Future University &mdash; Cairo, Egypt <span class="tag">Event Operations</span></div>
+        <ul class="tl-list">
+          <li>Managed AV systems, Zoom administration and live technical support for a 50+ attendee hybrid workshop</li>
+        </ul>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">Apr 2025 &mdash; Sep 2025 &middot; 6 mos</div>
+        <div class="tl-role">Technical Support Agent</div>
+        <div class="tl-org">The Future University &mdash; Cairo, Egypt <span class="tag">Internship</span></div>
+        <ul class="tl-list">
+          <li>Completed assigned support tasks promptly and efficiently</li>
+          <li>Collaborated with the team by communicating, sharing ideas and pooling effort, and participated in team projects</li>
+          <li>Adapted quickly and efficiently to new concepts, and managed time to complete all tasks within assigned deadlines</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="eyebrow">Projects</div>
+    <div class="proj-grid" data-reveal-stagger>
+
+      <div class="proj-card">
+        <div>
+          <div class="proj-idx">Lab &middot; Networking</div>
+        </div>
+        <div>
+          <div class="proj-name">Multi-Campus University Network &mdash; Cisco Packet Tracer</div>
+          <ul class="proj-list">
+            <li>Designed a full university topology linking Main Campus, Branch Campus and Cloud across 10 VLANs &mdash; Admin, HR, Finance, Business, E&amp;C, A&amp;D, Student Lab, IT, Branch Staff and Branch Lab</li>
+            <li>Implemented Router-on-a-Stick inter-VLAN routing with 802.1Q subinterfaces, letting a single router serve as default gateway for every VLAN</li>
+            <li>Assigned an independent /24 subnet per VLAN and configured a dedicated DHCP pool for each, so every host receives IP, gateway and DNS automatically</li>
+            <li>Connected sites over Serial WAN links addressed with /30 point-to-point subnets, and exchanged routes between campuses and the cloud using RIPv2</li>
+            <li>Verified end-to-end reachability across the full chain &mdash; VLAN &rarr; Trunk &rarr; Gateway &rarr; DHCP &rarr; Routing &rarr; Testing &mdash; where one broken link takes the whole network down</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">10 VLANs</span><span class="tag">Router-on-a-Stick</span><span class="tag">802.1Q Trunking</span>
+            <span class="tag">DHCP</span><span class="tag">RIPv2</span><span class="tag">Serial WAN</span><span class="tag">Inter-VLAN Routing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div>
+          <div class="proj-idx">Lab &middot; Infrastructure &middot; Jan 2025 &mdash; Present</div>
+        </div>
+        <div>
+          <div class="proj-name">Enterprise Network &amp; Virtualization Infrastructure Lab</div>
+          <ul class="proj-list">
+            <li>Designed and implemented a multi-site enterprise network in Cisco Packet Tracer with OSPFv2 routing, VLAN segmentation, 802.1Q trunking and Spanning Tree Protocol</li>
+            <li>Configured extended ACLs, Port Security and SSH-only management access to strengthen network security within the lab environment</li>
+            <li>Diagnosed connectivity issues using Wireshark, ping, traceroute and TCP/IP troubleshooting to isolate routing, switching and endpoint faults</li>
+            <li>Deployed Ubuntu Server 22.04 LTS on VMware Workstation and configured SSH, Apache, UFW firewall, sudo policies and user permissions</li>
+            <li>Hosted a PHP/MySQL web application on Apache and configured MikroTik RouterOS NAT and port forwarding for controlled external access</li>
+            <li>Produced technical documentation &mdash; topology diagrams, IP addressing plans, VLAN assignments and deployment guides</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">OSPFv2</span><span class="tag">VMware</span><span class="tag">Ubuntu Server</span>
+            <span class="tag">MikroTik RouterOS</span><span class="tag">ACLs</span><span class="tag">Wireshark</span><span class="tag">PowerShell</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div>
+          <div class="proj-idx">Application &middot; Full-Stack</div>
+        </div>
+        <div>
+          <div class="proj-name">Multi-Role Hospital Management System</div>
+          <ul class="proj-list">
+            <li>Built a full hospital operations platform with seven role-based portals &mdash; admin, doctors, nurses, patients, accounting, pharmacy and lab &mdash; each with isolated permissions and its own login gateway</li>
+            <li>Implemented a preliminary-vs-final lab result workflow matching clinical practice: values stay hidden from nurses and patients until a lab doctor formally confirms them</li>
+            <li>Automated the clinical-to-financial chain &mdash; prescriptions generate nurse medication schedules and deduct pharmacy stock in one step, with every restock logged as a finance transaction</li>
+            <li>Built a conflict-free appointment engine over real doctor hours, live bed management across 16 rooms and 32 beds, and an 8-type blood bank with low-stock alerts</li>
+            <li>Shipped a production-minded security layer &mdash; hashed passwords, CSRF protection, brute-force lockouts, SQL injection and XSS hardening, and archiving instead of hard deletion</li>
+            <li>Localized the interface into Arabic, English and French (1,487+ translation keys) with browser-language detection, packaged as an installable PWA</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Apache</span><span class="tag">RBAC</span>
+            <span class="tag">i18n AR/EN/FR</span><span class="tag">PWA</span><span class="tag">CSRF/XSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div>
+          <div class="proj-idx">Application &middot; E-Commerce</div>
+        </div>
+        <div>
+          <div class="proj-name">Future Store &mdash; E-Commerce Platform</div>
+          <ul class="proj-list">
+            <li>Built a full e-commerce platform covering catalog, cart, checkout and order management, backed by a REST-style API layer separate from the customer-facing pages</li>
+            <li>Built an admin panel for product management, order processing, user management and exportable sales reports</li>
+            <li>Applied prepared statements throughout, CSRF protection on state-changing requests, and hashed password authentication</li>
+            <li>Designed the config layer to auto-detect its base URL from the document root and suppress error output in production while still logging server-side</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span><span class="tag">REST API</span><span class="tag">Apache</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div>
+          <div class="proj-idx">Application &middot; Public Sector</div>
+        </div>
+        <div>
+          <div class="proj-name">Public Complaints Management System</div>
+          <ul class="proj-list">
+            <li>Built a citizen-facing complaint submission and tracking system spanning three access levels &mdash; public submitters, department employees and administrators</li>
+            <li>Covered the full lifecycle: category-based routing, status history, file attachments, canned staff responses and post-resolution ratings</li>
+            <li>Used environment-variable configuration with safe development defaults, plus a schema-versioning system that tracks and applies database upgrades</li>
+            <li>Applied prepared statements, CSRF protection and hashed passwords throughout</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">RBAC</span><span class="tag">Schema Migrations</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="eyebrow">Technical Skills</div>
+    <div class="skills-grid" data-reveal-stagger>
+      <div class="skill-group">
+        <h3>Help Desk &amp; Support</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Tier 1 / Tier 2</span><span class="skill-tag">Incident Management</span><span class="skill-tag">Ticket Escalation</span>
+          <span class="skill-tag">SLA Compliance</span><span class="skill-tag">Root Cause Analysis</span><span class="skill-tag">ITIL-aligned</span>
+          <span class="skill-tag">AnyDesk</span><span class="skill-tag">Zoom Remote Assistance</span><span class="skill-tag">Endpoint Support</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Networking &amp; Protocols</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">TCP/IP</span><span class="skill-tag">DNS</span><span class="skill-tag">DHCP</span>
+          <span class="skill-tag">OSPF</span><span class="skill-tag">EIGRP</span><span class="skill-tag">RIPv2</span>
+          <span class="skill-tag">VLANs</span><span class="skill-tag">STP</span><span class="skill-tag">Cisco IOS</span>
+          <span class="skill-tag">VLSM / Subnetting</span><span class="skill-tag">LAN/WAN</span><span class="skill-tag">Wireshark</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Network Security</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">ACLs</span><span class="skill-tag">NAT / Port Forwarding</span><span class="skill-tag">Port Security</span>
+          <span class="skill-tag">SSH Hardening</span><span class="skill-tag">Firewall Management</span><span class="skill-tag">VPN</span>
+          <span class="skill-tag">IDS / SIEM Concepts</span><span class="skill-tag">Patch Management</span><span class="skill-tag">Endpoint Security</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Systems, Cloud &amp; Virtualization</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Windows 10/11</span><span class="skill-tag">Windows Server</span><span class="skill-tag">Active Directory</span>
+          <span class="skill-tag">Microsoft 365 Admin</span><span class="skill-tag">VMware Workstation</span><span class="skill-tag">MikroTik CHR</span>
+          <span class="skill-tag">Ubuntu Server 22.04</span><span class="skill-tag">Kali Linux</span><span class="skill-tag">macOS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Linux Administration</h3>
+        <div class="skill-feature">
+          <div class="skill-feature-head">
+            <span class="dot-row"><span class="cdot"></span><span class="cdot"></span><span class="cdot"></span></span>
+            <span class="fname">ubuntu-22.04 &mdash; /srv/app</span>
+          </div>
+          <div class="skill-feature-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">sudo ufw</span> <span class="arg">allow 22/tcp</span>  <span class="cm"># ssh only</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">systemctl</span> <span class="arg">enable --now apache2</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">usermod</span> <span class="arg">-aG sudo mazin</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">chown</span> <span class="arg">-R www-data:www-data /srv/app</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">journalctl</span> <span class="arg">-u apache2 -xe</span>  <span class="cm"># triage</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Scripting &amp; Databases</h3>
+        <div class="skill-feature">
+          <div class="skill-feature-head">
+            <span class="dot-row"><span class="cdot"></span><span class="cdot"></span><span class="cdot"></span></span>
+            <span class="fname">query &mdash; helpdesk.db</span>
+          </div>
+          <div class="skill-feature-body">
+            <div class="code-line"><span class="kw">CREATE TABLE</span> <span class="arg">tickets (id, user, tier, status);</span></div>
+            <div class="code-line"><span class="kw">SELECT</span> <span class="arg">tier, COUNT(*)</span> <span class="kw">FROM</span> <span class="arg">tickets</span></div>
+            <div class="code-line"><span class="arg">  </span><span class="kw">WHERE</span> <span class="arg">status='open'</span> <span class="kw">GROUP BY</span> <span class="arg">tier;</span></div>
+            <div class="code-line"><span class="prompt">PS&gt;</span><span class="kw">Get-ADUser</span> <span class="arg">-Filter *</span> <span class="cm"># PowerShell</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split-row">
+      <div>
+        <div class="mini-h">Core Competencies</div>
+        <ul class="mini-list">
+          <li>Troubleshooting &amp; Root Cause Analysis</li>
+          <li>Technical Documentation &amp; SOPs</li>
+          <li>Knowledge Base Management</li>
+          <li>User Training &amp; Self-Service Enablement</li>
+          <li>Cross-team Communication</li>
+          <li>AI-Assisted IT &amp; Workflow Automation</li>
+        </ul>
+      </div>
+      <div>
+        <div class="mini-h">Education &amp; Languages</div>
+        <ul class="mini-list">
+          <li><strong style="color:var(--text)">Postgraduate Diploma in Information Technology</strong> &mdash; The Future University, Khartoum, Sudan, May 2021 &ndash; Mar 2025</li>
+          <li><strong style="color:var(--text)">Technical Support Training</strong> &mdash; The Future University, Cairo, Egypt, Apr 2025</li>
+        </ul>
+        <div class="lang-row">
+          <div class="lang-item">Arabic <div class="lang-bar"><i style="width:100%"></i></div></div>
+          <div class="lang-item">English <div class="lang-bar"><i style="width:60%"></i></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEEP DIVE -->
+  <section id="deepdive">
+    <div class="eyebrow">Deep Dive</div>
+    <h2>Under the hood</h2>
+    <p class="dd-intro">A closer look at how the certifications translate into real skills &mdash; the inter-VLAN campus design behind the CCNA, a working Ubuntu Server command reference, and the SQL that backs the PHP/MySQL applications.</p>
+
+    <!-- Campus network / inter-VLAN -->
+    <div class="dd-block" data-reveal>
+      <div class="dd-head">
+        <h3>Inter-VLAN Routing &mdash; Campus Design</h3>
+        <span class="dd-tag">CCNA 200-301 &middot; Packet Tracer</span>
+      </div>
+      <div class="ad-diagram-wrap">
+        <svg class="topo" viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" style="max-width:640px; margin:0 auto; display:block;">
+          <!-- links: router to switch subinterfaces -->
+          <line class="link" x1="210" y1="50" x2="55" y2="140"/>
+          <line class="link" x1="210" y1="50" x2="155" y2="140"/>
+          <line class="link" x1="210" y1="50" x2="255" y2="140"/>
+          <line class="link" x1="210" y1="50" x2="355" y2="140"/>
+          <!-- links: VLAN to hosts -->
+          <line class="link" x1="55" y1="140" x2="55" y2="225"/>
+          <line class="link" x1="155" y1="140" x2="155" y2="225"/>
+          <line class="link" x1="255" y1="140" x2="255" y2="225"/>
+          <line class="link" x1="355" y1="140" x2="355" y2="225"/>
+
+          <!-- Router on a stick -->
+          <circle class="node-ring" cx="210" cy="50" r="20"/>
+          <circle class="node-core" cx="210" cy="50" r="12"/>
+          <text class="node-label" x="234" y="47">R1 &mdash; G0/0.x</text>
+          <text class="node-label" x="234" y="58">802.1Q TRUNK</text>
+
+          <!-- VLANs -->
+          <circle class="node-ring" cx="55" cy="140" r="14"/>
+          <circle class="node-core" cx="55" cy="140" r="7"/>
+          <text class="node-label" x="20" y="122">VLAN 10 &mdash; ADMIN</text>
+
+          <circle class="node-ring" cx="155" cy="140" r="14"/>
+          <circle class="node-core" cx="155" cy="140" r="7"/>
+          <text class="node-label" x="122" y="122">VLAN 30 &mdash; FIN</text>
+
+          <circle class="node-ring" cx="255" cy="140" r="14"/>
+          <circle class="node-core" cx="255" cy="140" r="7"/>
+          <text class="node-label" x="218" y="122">VLAN 70 &mdash; LAB</text>
+
+          <circle class="node-ring" cx="355" cy="140" r="14"/>
+          <circle class="node-core" cx="355" cy="140" r="7"/>
+          <text class="node-label" x="326" y="122">VLAN 80 &mdash; IT</text>
+
+          <!-- hosts -->
+          <rect x="47" y="217" width="16" height="16" rx="2" fill="none" stroke="#4A64C4" stroke-width="1.4"/>
+          <rect x="147" y="217" width="16" height="16" rx="2" fill="none" stroke="#4A64C4" stroke-width="1.4"/>
+          <rect x="247" y="217" width="16" height="16" rx="2" fill="none" stroke="#4A64C4" stroke-width="1.4"/>
+          <rect x="347" y="217" width="16" height="16" rx="2" fill="none" stroke="#4A64C4" stroke-width="1.4"/>
+          <text class="node-label" x="20" y="255" style="fill:#4A64C4; font-weight:600;">192.168.1.0/24</text>
+          <text class="node-label" x="120" y="255" style="fill:#4A64C4; font-weight:600;">192.168.3.0/24</text>
+          <text class="node-label" x="220" y="255" style="fill:#4A64C4; font-weight:600;">192.168.7.0/24</text>
+          <text class="node-label" x="320" y="255" style="fill:#4A64C4; font-weight:600;">192.168.8.0/24</text>
+
+          <text class="node-label" x="86" y="288" style="font-size:10px; fill:#4A64C4; font-weight:600;">10 VLANS &middot; 1 TRUNK &middot; DHCP POOL PER SUBNET</text>
+
+          <!-- animated packet: DHCP offer -->
+          <circle class="packet" r="3.2">
+            <animateMotion dur="3.5s" repeatCount="indefinite" path="M210,50 L155,140 L155,225"/>
+          </circle>
+        </svg>
+      </div>
+      <div class="cert-list" style="justify-content:center; margin-top:18px;">
+        <span class="cert-chip">Subinterfaces &amp; 802.1Q</span>
+        <span class="cert-chip">Trunking</span>
+        <span class="cert-chip">DHCP Pools</span>
+        <span class="cert-chip">Serial WAN /30</span>
+        <span class="cert-chip">RIPv2 &amp; OSPFv2</span>
+        <span class="cert-chip">Extended ACLs</span>
+      </div>
+    </div>
+
+    <!-- Linux command reference -->
+    <div class="dd-block" data-reveal>
+      <div class="dd-head">
+        <h3>Linux Command Reference</h3>
+        <span class="dd-tag">Ubuntu Server 22.04 LTS &middot; VMware Lab</span>
+      </div>
+
+      <div class="hack-wrap">
+        <div class="hack-frame">
+          <div class="hack-rain" id="hackRain"></div>
+          <div class="hack-overlay">
+            <div class="hack-line">mazin@ubuntu:~$ sudo systemctl status ssh</div>
+            <div class="hack-line ok">&#9679; active (running) &mdash; ufw allow 22/tcp<span class="caret"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cheat-grid" data-reveal-stagger>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Command Line Basics</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">pwd</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">ls</span> <span class="arg">-la</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">man</span> <span class="arg">systemctl</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">history</span> <span class="cm">| tail</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">File Management</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">cp</span> <span class="arg">-r src/ dst/</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">mv</span> <span class="arg">old.conf new.conf</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">rm</span> <span class="arg">-rf /tmp/cache</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">find</span> <span class="arg">/var -name "*.log"</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Text Editing &amp; Viewing</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">nano</span> <span class="arg">/etc/hosts</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">cat</span> <span class="arg">/etc/os-release</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">grep</span> <span class="arg">-r "error" /var/log</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Users &amp; Groups</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">adduser</span> <span class="arg">support</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">groupadd</span> <span class="arg">helpdesk</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">usermod</span> <span class="arg">-aG sudo support</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">passwd</span> <span class="arg">support</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Permissions &amp; Ownership</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">chmod</span> <span class="arg">750 /srv/app</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">chown</span> <span class="arg">www-data:www-data file</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">umask</span> <span class="arg">0027</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">chage</span> <span class="arg">-M 90 support</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Process Management</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">ps</span> <span class="arg">aux</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">top</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">kill</span> <span class="arg">-9 4521</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">jobs</span> <span class="arg">-l</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Services &amp; systemd</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">systemctl</span> <span class="arg">start ssh</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">systemctl</span> <span class="arg">enable apache2</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">systemctl</span> <span class="arg">status mysql</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">journalctl</span> <span class="arg">-u ssh</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Package Management</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">apt</span> <span class="arg">install apache2</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">apt</span> <span class="arg">update &amp;&amp; apt upgrade -y</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">dpkg</span> <span class="arg">-l | grep php</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Firewall &amp; Hardening</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">ufw</span> <span class="arg">allow 22/tcp</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">ufw</span> <span class="arg">enable</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">ufw</span> <span class="arg">status numbered</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Networking</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">ip</span> <span class="arg">addr show</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">netplan</span> <span class="arg">apply</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">hostnamectl</span> <span class="arg">set-hostname srv1</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Archiving &amp; Transfer</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">tar</span> <span class="arg">-czvf backup.tar.gz /srv</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">scp</span> <span class="arg">file.txt user@host:/tmp</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">rsync</span> <span class="arg">-av src/ dst/</span></div>
+          </div>
+        </div>
+
+        <div class="cheat-card">
+          <div class="cheat-card-head">Logs &amp; Scheduling</div>
+          <div class="cheat-card-body">
+            <div class="code-line"><span class="prompt">$</span><span class="kw">journalctl</span> <span class="arg">-xe</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">crontab</span> <span class="arg">-e</span></div>
+            <div class="code-line"><span class="prompt">$</span><span class="kw">tail</span> <span class="arg">-f /var/log/syslog</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SQL Joins -->
+    <div class="dd-block" data-reveal>
+      <div class="dd-head">
+        <h3>SQL Join Types</h3>
+        <span class="dd-tag">MySQL &middot; PHP Applications</span>
+      </div>
+
+      <div class="ad-diagram-wrap" style="margin-bottom:34px;">
+        <svg class="topo" viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" style="max-width:640px; margin:0 auto; display:block;">
+
+          <line class="link" x1="90" y1="110" x2="180" y2="110"/>
+          <line class="link" x1="240" y1="110" x2="330" y2="110"/>
+
+          <!-- Table A cylinder -->
+          <line class="node-ring" x1="48" y1="64" x2="48" y2="156"/>
+          <line class="node-ring" x1="132" y1="64" x2="132" y2="156"/>
+          <ellipse class="node-ring" cx="90" cy="156" rx="42" ry="12"/>
+          <ellipse class="node-core" cx="90" cy="64" rx="42" ry="12"/>
+          <text class="node-label" x="58" y="188">TABLE: tickets</text>
+
+          <!-- Table B cylinder -->
+          <line class="node-ring" x1="288" y1="64" x2="288" y2="156"/>
+          <line class="node-ring" x1="372" y1="64" x2="372" y2="156"/>
+          <ellipse class="node-ring" cx="330" cy="156" rx="42" ry="12"/>
+          <ellipse class="node-core" cx="330" cy="64" rx="42" ry="12"/>
+          <text class="node-label" x="300" y="188">TABLE: users</text>
+
+          <!-- engine hub -->
+          <circle class="node-ring" cx="210" cy="110" r="20"/>
+          <circle class="node-core" cx="210" cy="110" r="12"/>
+          <text class="node-label" x="195" y="140">JOIN</text>
+
+          <text class="node-label" x="85" y="20" style="font-size:10px; font-weight:600;">CREATE &middot; INSERT &middot; SELECT &middot; JOIN &mdash; LIVE QUERY FLOW</text>
+
+          <circle class="packet" r="3.2">
+            <animateMotion dur="2.6s" repeatCount="indefinite" path="M90,110 L180,110"/>
+          </circle>
+          <circle class="packet" r="3.2">
+            <animateMotion dur="2.6s" begin="1.3s" repeatCount="indefinite" path="M330,110 L240,110"/>
+          </circle>
+        </svg>
+      </div>
+
+      <div class="join-grid" data-reveal-stagger>
+
+        <div class="join-card">
+          <h4>Inner Join</h4>
+          <div class="desc">Only matching rows in both tables.</div>
+          <svg class="venn" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+            <defs><clipPath id="clipInner"><circle cx="95" cy="75" r="52"/></clipPath></defs>
+            <circle class="venn-outline" cx="95" cy="75" r="52"/>
+            <circle class="venn-outline" cx="165" cy="75" r="52"/>
+            <circle class="venn-fill" cx="165" cy="75" r="52" clip-path="url(#clipInner)"/>
+            <text class="node-label" x="55" y="30">A</text>
+            <text class="node-label" x="195" y="30">B</text>
+          </svg>
+          <div class="code-line"><span class="kw">SELECT</span> <span class="arg">*</span> <span class="kw">FROM</span> <span class="arg">A</span> <span class="kw">JOIN</span> <span class="arg">B ON A.id=B.id;</span></div>
+        </div>
+
+        <div class="join-card">
+          <h4>Left Join</h4>
+          <div class="desc">All of A, plus matches from B.</div>
+          <svg class="venn" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+            <circle class="venn-fill" cx="95" cy="75" r="52"/>
+            <circle class="venn-outline" cx="165" cy="75" r="52"/>
+            <text class="node-label" x="55" y="30">A</text>
+            <text class="node-label" x="195" y="30">B</text>
+          </svg>
+          <div class="code-line"><span class="kw">SELECT</span> <span class="arg">*</span> <span class="kw">FROM</span> <span class="arg">A</span> <span class="kw">LEFT JOIN</span> <span class="arg">B ON A.id=B.id;</span></div>
+        </div>
+
+        <div class="join-card">
+          <h4>Right Join</h4>
+          <div class="desc">All of B, plus matches from A.</div>
+          <svg class="venn" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+            <circle class="venn-outline" cx="95" cy="75" r="52"/>
+            <circle class="venn-fill" cx="165" cy="75" r="52"/>
+            <text class="node-label" x="55" y="30">A</text>
+            <text class="node-label" x="195" y="30">B</text>
+          </svg>
+          <div class="code-line"><span class="kw">SELECT</span> <span class="arg">*</span> <span class="kw">FROM</span> <span class="arg">A</span> <span class="kw">RIGHT JOIN</span> <span class="arg">B ON A.id=B.id;</span></div>
+        </div>
+
+        <div class="join-card">
+          <h4>Full Outer Join</h4>
+          <div class="desc">Every row from both tables.</div>
+          <svg class="venn" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+            <circle class="venn-fill" cx="95" cy="75" r="52" fill-opacity="0.28"/>
+            <circle class="venn-fill" cx="165" cy="75" r="52" fill-opacity="0.28"/>
+            <text class="node-label" x="55" y="30">A</text>
+            <text class="node-label" x="195" y="30">B</text>
+          </svg>
+          <div class="code-line"><span class="kw">SELECT</span> <span class="arg">*</span> <span class="kw">FROM</span> <span class="arg">A</span> <span class="kw">LEFT JOIN</span> <span class="arg">B &hellip;</span> <span class="kw">UNION</span> <span class="arg">&hellip;</span></div>
+        </div>
+
+      </div>
+      <div class="join-note">MySQL has no native <b>FULL OUTER JOIN</b> &mdash; it is emulated with a <b>UNION</b> of a LEFT and a RIGHT join. Also comfortable with <b>SELF JOIN</b>, prepared statements, and subqueries.</div>
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="eyebrow">Certifications</div>
+    <h2>The full ledger</h2>
+    <p class="dd-intro">Every certificate below is held as an original PDF and carries a public verification link. 27 credentials across five tracks &mdash; networking, IT support, security, cloud, and AI.</p>
+
+    <div class="track-head">Cisco CCNA 200-301 <span class="count">5 credentials &middot; Logical Operations &amp; Engovation</span></div>
+    <div class="cert-ledger" data-reveal-stagger>
+      <div class="cert-row">
+        <div class="cr-no">01</div>
+        <div class="cr-main">
+          <div class="cr-name">Cisco Implementation and Administration (CCNA 200-301) &mdash; Specialization</div>
+          <div class="cr-meta"><span class="iss">Logical Operations</span> &middot; Coursera &middot; 19 Apr 2026</div>
+          <div class="cr-id">ID SYZAEJ7QJGX0</div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">02</div>
+        <div class="cr-main">
+          <div class="cr-name">CCNA: Networking Basics, Switching, Addressing, and Routing</div>
+          <div class="cr-meta"><span class="iss">Logical Operations</span> &middot; 28 Feb 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/EW5QPKRBCSNU" target="_blank" rel="noopener">verify/EW5QPKRBCSNU</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">03</div>
+        <div class="cr-main">
+          <div class="cr-name">CCNA: Network Security, Automation, and Troubleshooting</div>
+          <div class="cr-meta"><span class="iss">Logical Operations</span> &middot; 7 Apr 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/Q5NPGQNWSK6B" target="_blank" rel="noopener">verify/Q5NPGQNWSK6B</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">04</div>
+        <div class="cr-main">
+          <div class="cr-name">CCNA: Wireless Networking and IP Services</div>
+          <div class="cr-meta"><span class="iss">Logical Operations</span> &middot; 19 Apr 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/QZ2MHL26GKMZ" target="_blank" rel="noopener">verify/QZ2MHL26GKMZ</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">05</div>
+        <div class="cr-main">
+          <div class="cr-name">Cisco Certified Network Associate (CCNA 200-301)</div>
+          <div class="cr-meta"><span class="iss">Engovation</span> &middot; Nov 2025 &ndash; Jan 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="track-head">Google IT Support Professional Certificate <span class="count">7 credentials &middot; Google via Coursera</span></div>
+    <div class="cert-ledger" data-reveal-stagger>
+      <div class="cert-row">
+        <div class="cr-no">06</div>
+        <div class="cr-main">
+          <div class="cr-name">Google IT Support &mdash; Professional Certificate</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 6-course track &middot; completed Mar 2026</div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">07</div>
+        <div class="cr-main">
+          <div class="cr-name">Technical Support Fundamentals</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 5 Jan 2025</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/ZUFS7SECQFE5" target="_blank" rel="noopener">verify/ZUFS7SECQFE5</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">08</div>
+        <div class="cr-main">
+          <div class="cr-name">The Bits and Bytes of Computer Networking</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 28 Feb 2025</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/J4N2ID02W6AY" target="_blank" rel="noopener">verify/J4N2ID02W6AY</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">09</div>
+        <div class="cr-main">
+          <div class="cr-name">Operating Systems and You: Becoming a Power User</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 17 Jul 2025</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/IP3XSCF2H4XY" target="_blank" rel="noopener">verify/IP3XSCF2H4XY</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">10</div>
+        <div class="cr-main">
+          <div class="cr-name">System Administration and IT Infrastructure Services</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 24 Sep 2025</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/5YFIUBFH511B" target="_blank" rel="noopener">verify/5YFIUBFH511B</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">11</div>
+        <div class="cr-main">
+          <div class="cr-name">IT Security: Defense Against the Digital Dark Arts</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 1 Dec 2025</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/TRK1HNXEE7MZ" target="_blank" rel="noopener">verify/TRK1HNXEE7MZ</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">12</div>
+        <div class="cr-main">
+          <div class="cr-name">Accelerate Your Job Search with AI</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 19 Mar 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/Z2SB37ANO0LN" target="_blank" rel="noopener">verify/Z2SB37ANO0LN</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="track-head">Google Network Security Specialization <span class="count">8 credentials &middot; Google via Coursera</span></div>
+    <div class="cert-ledger" data-reveal-stagger>
+      <div class="cert-row">
+        <div class="cr-no">13</div>
+        <div class="cr-main">
+          <div class="cr-name">Google Network Security &mdash; Specialization Certificate</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; badge issued 22 Jan 2026</div>
+          <div class="cr-id">ID TAOA75WB7WJ6 &middot; <a href="https://www.credly.com/go/6c47L79s" target="_blank" rel="noopener">Credly badge</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">14</div>
+        <div class="cr-main">
+          <div class="cr-name">Network Architecture</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 27 Dec 2025</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/NOIMSMST0AS4" target="_blank" rel="noopener">verify/NOIMSMST0AS4</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">15</div>
+        <div class="cr-main">
+          <div class="cr-name">Network Operations</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 4 Jan 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/T3CJU5840NJO" target="_blank" rel="noopener">verify/T3CJU5840NJO</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">16</div>
+        <div class="cr-main">
+          <div class="cr-name">Secure Against Network Intrusions</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 6 Jan 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/1B5PYEEZ6YQQ" target="_blank" rel="noopener">verify/1B5PYEEZ6YQQ</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">17</div>
+        <div class="cr-main">
+          <div class="cr-name">Security Hardening</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 11 Jan 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/41BO4NKM0DOE" target="_blank" rel="noopener">verify/41BO4NKM0DOE</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">18</div>
+        <div class="cr-main">
+          <div class="cr-name">Introduction to Detection and Incident Response</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 14 Jan 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/9FOEAMLX0MX8" target="_blank" rel="noopener">verify/9FOEAMLX0MX8</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">19</div>
+        <div class="cr-main">
+          <div class="cr-name">Network Monitoring and Analysis</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 18 Jan 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/AC3R08S6GXX4" target="_blank" rel="noopener">verify/AC3R08S6GXX4</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">20</div>
+        <div class="cr-main">
+          <div class="cr-name">Network Traffic and Logs Using IDS and SIEM Tools</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; 22 Jan 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/V90KVAWA7S7Z" target="_blank" rel="noopener">verify/V90KVAWA7S7Z</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="track-head">AI &amp; Automation <span class="count">5 credentials &middot; Anthropic, Google, Edureka</span></div>
+    <div class="cert-ledger" data-reveal-stagger>
+      <div class="cert-row">
+        <div class="cr-no">21</div>
+        <div class="cr-main">
+          <div class="cr-name">Google AI Fundamentals</div>
+          <div class="cr-meta"><span class="iss">Google</span> &middot; Coursera &middot; 28 Aug 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/10SBG78KUHGT" target="_blank" rel="noopener">verify/10SBG78KUHGT</a> &middot; <a href="https://www.credly.com/go/y67yoqEY" target="_blank" rel="noopener">Credly badge</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">22</div>
+        <div class="cr-main">
+          <div class="cr-name">Claude Code in Action</div>
+          <div class="cr-meta"><span class="iss">Anthropic Academy</span> &middot; 18 Aug 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/3MZW7V36AWRU" target="_blank" rel="noopener">verify/3MZW7V36AWRU</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">23</div>
+        <div class="cr-main">
+          <div class="cr-name">Claude AI and Prompting for Everyone</div>
+          <div class="cr-meta"><span class="iss">Edureka</span> &middot; Coursera &middot; 22 Jul 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/PO4XP45NAIAN" target="_blank" rel="noopener">verify/PO4XP45NAIAN</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">24</div>
+        <div class="cr-main">
+          <div class="cr-name">Claude 101 &mdash; Certificate of Completion</div>
+          <div class="cr-meta"><span class="iss">Anthropic</span> &middot; Jul 2026</div>
+          <div class="cr-id">ID g8nj4g7o9az3</div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">25</div>
+        <div class="cr-main">
+          <div class="cr-name">AI Fundamentals with Claude</div>
+          <div class="cr-meta"><span class="iss">Anthropic</span> &amp; Advancing Women in Tech &middot; 7 May 2026</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/QXBTZHZOP34V" target="_blank" rel="noopener">verify/QXBTZHZOP34V</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="track-head">Security &amp; Cloud Foundations <span class="count">2 credentials &middot; Coursera</span></div>
+    <div class="cert-ledger" data-reveal-stagger>
+      <div class="cert-row">
+        <div class="cr-no">26</div>
+        <div class="cr-main">
+          <div class="cr-name">Cybersecurity Threat Vectors and Mitigation</div>
+          <div class="cr-meta"><span class="iss">Coursera</span> &middot; 8 May 2025</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/RZK4XWDQHOY1" target="_blank" rel="noopener">verify/RZK4XWDQHOY1</a></div>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cr-no">27</div>
+        <div class="cr-main">
+          <div class="cr-name">Introduction to Networking and Cloud Computing</div>
+          <div class="cr-meta"><span class="iss">Coursera</span> &middot; 17 Feb 2025</div>
+          <div class="cr-id"><a href="https://coursera.org/verify/VLKJXBD2BPPH" target="_blank" rel="noopener">verify/VLKJXBD2BPPH</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="eyebrow">Get in touch</div>
+    <div class="contact-inner" data-reveal>
+      <div>
+        <h2>Ready to contribute to a high-performing IT team.</h2>
+        <p>Looking for an IT Support, Help Desk, NOC, or Network Administration role &mdash; open to relocation and to remote/hybrid setups. Let's talk.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:mazinkof9@gmail.com"><span class="k">Email</span> mazinkof9@gmail.com</a>
+        <a href="tel:+201221562259"><span class="k">Phone</span> +20 122 156 2259</a>
+        <a href="https://www.linkedin.com/in/mazin-aboud-a1a3b2306/" target="_blank" rel="noopener"><span class="k">LinkedIn</span> mazin-aboud</a>
+        <a href="https://github.com/MazinAboud" target="_blank" rel="noopener"><span class="k">GitHub</span> MazinAboud</a>
+        <a href="#top"><span class="k">Based</span> Cairo, Egypt</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Mazin BadrEldin Ali Aboud &middot; IT Technical Support Specialist &middot; Cairo, Egypt</p>
+</footer>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Mazin Aboud",
+  "name": "Mazin BadrEldin Ali Aboud",
+  "alternateName": "Mazin Aboud",
   "jobTitle": "IT Technical Support Specialist",
   "url": "https://mazinaboud.github.io/mazen-portfolio/",
   "image": "https://mazinaboud.github.io/mazen-portfolio/avatar-web.jpg",
-  "address": {"@type": "PlaceOfResidence", "addressCountry": "SA"},
+  "email": "mailto:mazinkof9@gmail.com",
+  "telephone": "+201221562259",
+  "address": {"@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG"},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "The Future University"},
   "sameAs": [
     "https://www.linkedin.com/in/mazin-aboud-a1a3b2306/",
     "https://github.com/MazinAboud"
   ],
-  "knowsAbout": ["Help Desk Support", "CCNA Networking", "Microsoft 365 Administration", "Windows Server", "Linux Administration", "PHP", "MySQL"]
+  "knowsAbout": ["Help Desk Support", "IT Technical Support", "CCNA 200-301", "Cisco Networking", "Network Security", "Microsoft 365 Administration", "Windows Server", "Linux Administration", "VMware", "MikroTik RouterOS", "PHP", "MySQL"],
+  "knowsLanguage": ["Arabic", "English"]
 }
 </script>
-</head>
-<body>
-<a href="#main" class="skip-link">Skip to content</a>
-<div class="progress-bar" id="progressBar"></div>
+<script>
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-<header class="nav" id="nav">
-<a href="#hero" class="logo">mazin<span>.dev</span></a>
-<nav id="menu">
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#certs">Certifications</a>
-<a href="#contact">Contact</a>
-</nav>
-<div class="nav-actions">
-<button id="themeBtn" aria-label="Toggle theme">&#9789;</button>
-<button id="hamburger" aria-label="Menu">&#9776;</button>
-</div>
-</header>
+  /* ---- theme switch ---- */
+  const themeButtons = document.querySelectorAll('[data-theme-btn]');
+  function applyTheme(name){
+    document.documentElement.setAttribute('data-theme', name);
+    themeButtons.forEach(b => b.classList.toggle('active', b.dataset.themeBtn === name));
+    try{ localStorage.setItem('portfolio-theme', name); }catch(e){}
+  }
+  let savedTheme = 'dark';
+  try{ savedTheme = localStorage.getItem('portfolio-theme') || 'dark'; }catch(e){}
+  applyTheme(savedTheme);
+  themeButtons.forEach(b => b.addEventListener('click', () => applyTheme(b.dataset.themeBtn)));
 
-<main id="main">
-<section id="hero" class="hero">
-<div class="hero-grid" aria-hidden="true"></div>
-<div class="hero-inner reveal">
-<div class="avatar-ring"><img class="avatar-img" src="avatar-web.jpg" alt="Mazin Aboud" width="128" height="128" /></div>
-<p class="eyebrow"><span class="dot"></span> Available for opportunities</p>
-<h1>Hi, I'm <span class="gradient-text">Mazin Aboud</span></h1>
-<h2 class="role" id="typing">IT Technical Support Specialist</h2>
-<p class="hero-sub">Help Desk Support &bull; CCNA &bull; Microsoft 365 &bull; Windows / Linux &bull; Networking</p>
-<div class="cta">
-<a href="#contact" class="btn primary">Get in touch</a>
-<a href="https://github.com/MazinAboud" target="_blank" rel="noopener" class="btn ghost">GitHub Profile</a>
-</div>
-<div class="hero-badges">
-<img src="https://img.shields.io/badge/CCNA-Certified-1BA0D7?style=flat-square&logo=cisco&logoColor=white" alt="CCNA Certified" loading="lazy" onerror="this.style.display='none'" />
-<img src="https://img.shields.io/badge/Microsoft%20365-Admin-0078D4?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft 365 Admin" loading="lazy" onerror="this.style.display='none'" />
-<img src="https://img.shields.io/badge/Linux-Ubuntu-E95420?style=flat-square&logo=linux&logoColor=white" alt="Linux Ubuntu" loading="lazy" onerror="this.style.display='none'" />
-<img src="https://img.shields.io/badge/Networking-TCP%2FIP-2C3E50?style=flat-square" alt="Networking TCP/IP" loading="lazy" onerror="this.style.display='none'" />
+  /* ---- welcome voice greeting ---- */
+  let welcomePlayed = false;
+  function speakWelcome(){
+    if(welcomePlayed) return;
+    welcomePlayed = true;
+    try{
+      if(!('speechSynthesis' in window)) return;
+      const utter = new SpeechSynthesisUtterance('Welcome to my portfolio.');
+      utter.lang = 'en-US';
+      utter.pitch = 0.85;
+      utter.rate = 0.92;
+      utter.volume = 1;
+      const voices = window.speechSynthesis.getVoices();
+      const preferred = voices.find(v => v.lang && v.lang.startsWith('en') && /male|david|mark|daniel|alex|guy/i.test(v.name));
+      const anyEnglish = voices.find(v => v.lang && v.lang.startsWith('en'));
+      if(preferred) utter.voice = preferred;
+      else if(anyEnglish) utter.voice = anyEnglish;
+      window.speechSynthesis.speak(utter);
+    }catch(e){}
+  }
+  window.addEventListener('load', () => { setTimeout(speakWelcome, 500); });
+  function firstGestureForWelcome(){
+    speakWelcome();
+    document.removeEventListener('click', firstGestureForWelcome);
+    document.removeEventListener('keydown', firstGestureForWelcome);
+  }
+  document.addEventListener('click', firstGestureForWelcome);
+  document.addEventListener('keydown', firstGestureForWelcome);
 
-<img src="https://img.shields.io/badge/PHP-Developer-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP Developer" loading="lazy" onerror="this.style.display='none'" />
-</div>
-</div>
-</section>
+  /* ---- click sound feedback ---- */
+  let audioCtx = null;
+  let soundEnabled = true;
+  try{ soundEnabled = localStorage.getItem('portfolio-sound') !== 'off'; }catch(e){}
 
-<section id="stats" class="stats section">
-<div class="stat reveal"><span class="num" data-target="500" data-suffix="+">0</span><p>End-users supported</p></div>
-<div class="stat reveal"><span class="num" data-target="2000" data-suffix="+">0</span><p>Incidents documented</p></div>
-<div class="stat reveal"><span class="num" data-target="40" data-suffix="+">0</span><p>Daily tickets resolved</p></div>
-<div class="stat reveal"><span class="num" data-target="65" data-suffix="%">0</span><p>First-contact resolution</p></div>
-</section>
+  function playClick(){
+    if(!soundEnabled) return;
+    try{
+      if(!audioCtx){ audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
+      if(audioCtx.state === 'suspended'){ audioCtx.resume(); }
+      const t = audioCtx.currentTime;
+      const baseFreq = 560 + Math.random() * 30;
 
-<section id="about" class="section">
-<h3 class="section-title reveal"><span class="hash">#</span> About Me</h3>
-<div class="about-grid">
-<p class="about-text card reveal">
-IT Technical Support Specialist with over a year of enterprise help desk experience supporting university environments and 500+ end-users. Resolved 40+ daily tickets through ITIL-aligned workflows, driving a 20% gain in resolution efficiency and bringing first-contact resolution to 65%. Proficient across Windows 10/11, Windows Server, Linux (Ubuntu) and Microsoft 365 administration, with CCNA-backed hands-on experience in Cisco IOS, OSPF, VLANs, TCP/IP and network security hardening. Handled 2,000+ documented remote incidents via Microsoft Remote Desktop and AnyDesk while maintaining a knowledge base that measurably reduced escalations to senior engineers.
-</p>
-<div class="about-side card reveal">
-<h4>Services</h4>
-<ul>
-<li>Technical Support</li>
-<li>Computer Networking</li>
-<li>Network Support</li>
-<li>Computer Repair</li>
-<li>Backup &amp; Recovery</li>
-<li>AI-Augmented Workflows</li>
-</ul>
-<div class="about-loc">&#128205; Saudi Arabia</div>
-</div>
-</div>
-</section>
+      /* warm tonal body — triangle wave, gentle downward glide, lowpass-softened */
+      const osc = audioCtx.createOscillator();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(baseFreq, t);
+      osc.frequency.exponentialRampToValueAtTime(baseFreq * 0.5, t + 0.08);
 
-<section id="skills" class="section">
-<h3 class="section-title reveal"><span class="hash">#</span> Skills &amp; Tools</h3>
-<div class="skills-grid">
-<div class="skill-card card reveal"><h4>&#128421; Systems</h4><div class="tags"><span>Windows 10/11</span><span>Windows Server</span><span>Linux (Ubuntu)</span><span>Active Directory</span></div></div>
-<div class="skill-card card reveal"><h4>&#127760; Networking</h4><div class="tags"><span>CCNA</span><span>Cisco IOS</span><span>OSPF</span><span>VLANs</span><span>TCP/IP</span><span>Firewalls</span></div></div>
-<div class="skill-card card reveal"><h4>&#9729; Microsoft 365</h4><div class="tags"><span>M365 Admin</span><span>Exchange</span><span>Identity Mgmt</span><span>Access Control</span></div></div>
-<div class="skill-card card reveal"><h4>&#127891; Support</h4><div class="tags"><span>Help Desk</span><span>Troubleshooting</span><span>ITIL</span><span>AnyDesk</span><span>Remote Desktop</span></div></div>
-<div class="skill-card card reveal"><h4>&#128187; Development</h4><div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Apache</span><span>Auth &amp; RBAC</span></div></div>
-</div>
-</section>
+      const toneFilter = audioCtx.createBiquadFilter();
+      toneFilter.type = 'lowpass';
+      toneFilter.frequency.setValueAtTime(2400, t);
+      toneFilter.Q.value = 0.6;
 
-<section id="experience" class="section">
-<h3 class="section-title reveal"><span class="hash">#</span> Experience</h3>
-<div class="timeline">
-<div class="tl-item card reveal">
-<div class="tl-head"><h4>IT Technical Support Specialist</h4><span class="tl-date">Apr 2025 &mdash; Jun 2026</span></div>
-<p class="tl-org">The Future University &bull; Cairo, Egypt &bull; Full-time</p>
-<ul>
-<li>Diagnosed and resolved endpoint, application and network connectivity issues for 500+ users across Windows and Linux environments.</li>
-<li>Processed 40+ daily tickets through structured workflows, achieving a 20% improvement in team closure rates.</li>
-<li>Executed scheduled OS patching across 500+ endpoints, maintaining security and compliance.</li>
-<li>Maintained a centralized knowledge base of 2,000+ incidents with a 65% direct resolution rate.</li>
-<li>Reduced repeat escalations by 35% through structured Tier 2 handoff documentation.</li>
-</ul>
-</div>
-<div class="tl-item card reveal">
-<div class="tl-head"><h4>Technical Support Agent &mdash; Internship</h4><span class="tl-date">Apr 2025 &mdash; Sep 2025</span></div>
-<p class="tl-org">The Future University &bull; Internship</p>
-<ul>
-<li>Delivered first-line support while learning enterprise workflows.</li>
-<li>Collaborated on team projects, demonstrating adaptability and problem-solving.</li>
-<li>Managed time effectively to meet all assigned deadlines.</li>
-</ul>
-</div>
-</div>
-</section>
+      const toneGain = audioCtx.createGain();
+      toneGain.gain.setValueAtTime(0.0001, t);
+      toneGain.gain.exponentialRampToValueAtTime(0.09, t + 0.005);
+      toneGain.gain.exponentialRampToValueAtTime(0.0001, t + 0.1);
 
-<section id="projects" class="section">
-<h3 class="section-title reveal"><span class="hash">#</span> Key Projects</h3>
-<div class="projects-grid">
-<div class="project-card card reveal featured">
-<div class="project-head">
-<h4>Multi-Role Hospital Management System</h4>
-<span class="tl-date">2026 &mdash; Personal Project</span>
-</div>
-<div class="project-tech">
-<span>PHP</span><span>MySQL</span><span>Apache</span><span>RBAC</span><span>i18n (AR/EN/FR)</span><span>PWA</span><span>CSRF/XSS Protection</span>
-</div>
-<ul>
-<li>Architected a full hospital operations platform from scratch with seven independent role-based portals &mdash; admin, doctors, nurses, patients, accounting, pharmacy and lab &mdash; each with isolated permissions and its own login gateway.</li>
-<li>Implemented a preliminary-vs-final lab result workflow matching real clinical standards: values stay hidden from nurses and patients until a lab doctor formally confirms them.</li>
-<li>Automated the clinical-to-financial chain &mdash; prescriptions generate nurse medication schedules and deduct pharmacy stock in one step, with every restock logged automatically as a finance-module transaction.</li>
-<li>Built a conflict-free appointment engine that only surfaces genuinely open 30-minute slots across each doctor's real hours, plus a live bed-management system spanning 16 rooms and 32 beds synced to admission data, and an 8-type blood bank with low-stock alerts.</li>
-<li>Shipped a production-minded security layer &mdash; hashed passwords, CSRF protection on every request, brute-force lockouts across all seven portals, SQL injection/XSS hardening, and archiving instead of hard deletion to preserve medical records.</li>
-<li>Localized the entire interface into Arabic, English and French (1,487+ translation keys) with automatic browser-language detection, and packaged it as an installable Progressive Web App.</li>
-</ul>
-</div>
-<div class="project-card card reveal">
-<div class="project-head">
-<h4>Future Store &mdash; E-Commerce Platform</h4>
-<span class="tl-date">Personal Project</span>
-</div>
-<div class="project-tech">
-<span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Apache</span><span>REST API</span><span>CSRF Protection</span>
-</div>
-<ul>
-<li>Built a full e-commerce platform covering product catalog, cart, checkout and order management, backed by a dedicated REST-style API layer (products, orders, brands, authentication) separate from the customer-facing pages.</li>
-<li>Built an admin panel for product management, order processing, user management, and exportable sales reports.</li>
-<li>Applied prepared statements throughout, CSRF protection on state-changing requests, and hashed passwords for authentication.</li>
-<li>Designed the configuration layer to auto-detect its base URL from the server's document root and to suppress error output in production while still logging server-side &mdash; the kind of detail that matters when deploying a project somewhere new.</li>
-</ul>
-</div>
-<div class="project-card card reveal">
-<div class="project-head">
-<h4>Public Complaints Management System</h4>
-<span class="tl-date">Personal Project</span>
-</div>
-<div class="project-tech">
-<span>PHP</span><span>MySQL</span><span>RBAC</span><span>CSRF Protection</span>
-</div>
-<ul>
-<li>Built a citizen-facing complaint submission and tracking system spanning three access levels: public submitters, department employees, and administrators.</li>
-<li>Covered the full complaint lifecycle &mdash; category-based routing, status history tracking, file attachments, canned staff responses, and post-resolution ratings.</li>
-<li>Used environment-variable-based configuration with safe development defaults, plus a schema-versioning system that tracks and applies database upgrades as the project evolves.</li>
-<li>Applied prepared statements throughout, CSRF protection, and hashed passwords for authentication.</li>
-</ul>
-</div>
-<div class="project-card card reveal">
-<div class="project-head">
-<h4>Enterprise Network &amp; Virtualization Infrastructure Lab</h4>
-<span class="tl-date">Jan 2025 &mdash; Present</span>
-</div>
-<div class="project-tech">
-<span>Cisco Packet Tracer</span><span>VMware Workstation</span><span>Ubuntu Server 22.04 LTS</span><span>OSPFv2</span><span>ACLs</span><span>SSH</span><span>MikroTik RouterOS</span><span>PowerShell</span><span>Wireshark</span>
-</div>
-<ul>
-<li>Designed and implemented a multi-site enterprise network topology in Cisco Packet Tracer &mdash; configuring OSPFv2 link-state routing, VLAN segmentation with 802.1Q trunking, and Spanning Tree Protocol (STP) for loop prevention.</li>
-<li>Hardened network security through extended ACLs, Port Security at the access layer, and SSH-only management access, significantly reducing the simulated attack surface.</li>
-<li>Diagnosed network and connectivity issues using TCP/IP troubleshooting tools including Wireshark, ping and traceroute &mdash; isolating faults at the endpoint, switch, and routing layers.</li>
-<li>Provisioned Ubuntu Server 22.04 LTS on VMware Workstation; configured SSH access controls, Sudo privilege policies, UFW firewall rules, and Apache web hosting with security best practices.</li>
-<li>Deployed a PHP/MySQL web application on Apache and configured MikroTik RouterOS with NAT and port forwarding rules to enforce controlled external access &mdash; delivering a fully integrated solution spanning application hosting to network perimeter security.</li>
-</ul>
-</div>
-</div>
-</section>
+      osc.connect(toneFilter).connect(toneGain).connect(audioCtx.destination);
+      osc.start(t);
+      osc.stop(t + 0.12);
 
-<section id="certs" class="section">
-<h3 class="section-title reveal"><span class="hash">#</span> Certifications</h3>
-<div class="cert-grid">
-<div class="cert-card card reveal"><span class="cert-icon">&#127760;</span><h4>CCNA 200-301</h4><p>Cisco Certified Network Associate &mdash; Engovation. Nov 2025 &ndash; Jan 2026.</p>
-<div class="cert-sub">+ CCNA prep coursework (Logical Operations): Implementation &amp; Administration &bull; Security &amp; Automation &bull; Networking Basics</div>
-</div>
-<div class="cert-card card reveal"><span class="cert-icon">&#127891;</span><h4>Google IT Support Professional Certificate</h4><p>Google, via Coursera (v3).</p>
-<div class="cert-sub">5-course track: Technical Support Fundamentals &bull; Networking &amp; Cloud Computing &bull; Operating Systems &bull; System Administration &amp; IT Infrastructure &bull; IT Security</div>
-</div>
-<div class="cert-card card reveal"><span class="cert-icon">&#129302;</span><h4>AI Fundamentals with Claude</h4><p>Coursera &times; Anthropic / Advancing Women in Tech. ID: QXBTZHZOP34V</p></div>
-<div class="cert-card card reveal"><span class="cert-icon">&#128104;&#8205;&#128187;</span><h4>Network Technician Career Path</h4><p>End-to-end network technician training pathway &mdash; Cisco.</p></div>
-<div class="cert-card card reveal"><span class="cert-icon">&#128737;</span><h4>IT Security &amp; Cybersecurity Fundamentals</h4><p>Security fundamentals &mdash; Google / Microsoft Coursera. Feb 2025 &ndash; Dec 2025.</p></div>
-<div class="cert-card card reveal"><span class="cert-icon">&#128225;</span><h4>Networking Basics &amp; Network Devices Configuration</h4><p>Network devices configuration &mdash; Cisco. Oct 2024 &ndash; Jan 2025.</p></div>
-</div>
-</section>
+      /* crisp transient — short filtered noise burst gives it a defined "click" edge */
+      const burstLen = Math.max(1, Math.floor(audioCtx.sampleRate * 0.015));
+      const noiseBuffer = audioCtx.createBuffer(1, burstLen, audioCtx.sampleRate);
+      const data = noiseBuffer.getChannelData(0);
+      for(let i = 0; i < burstLen; i++){ data[i] = (Math.random() * 2 - 1) * (1 - i / burstLen); }
 
-<section id="github" class="section">
-<h3 class="section-title reveal"><span class="hash">#</span> GitHub Activity</h3>
-<div class="gh-stats reveal">
-<img src="https://github-readme-stats.vercel.app/api?username=MazinAboud&show_icons=true&hide_border=true&theme=transparent&title_color=6c8cff&icon_color=6c8cff&text_color=9aa6bd" alt="Mazin Aboud GitHub Stats" loading="lazy" onerror="this.closest('.gh-stats').style.display='none'" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MazinAboud&layout=compact&hide_border=true&theme=transparent&title_color=6c8cff&text_color=9aa6bd" alt="Top Languages" loading="lazy" onerror="this.style.display='none'" />
-</div>
-</section>
+      const noise = audioCtx.createBufferSource();
+      noise.buffer = noiseBuffer;
 
-<section id="contact" class="section">
-<h3 class="section-title reveal"><span class="hash">#</span> Let's Connect</h3>
-<div class="contact-card card reveal">
-<p>Open to IT support, networking and system administration opportunities.</p>
-<div class="contact-links">
-<a href="https://www.linkedin.com/in/mazin-aboud-a1a3b2306/" target="_blank" rel="noopener">&#128279; LinkedIn</a>
-<a href="https://github.com/MazinAboud" target="_blank" rel="noopener">&#128187; GitHub</a>
-<span>&#128205; Saudi Arabia</span>
-</div>
-</div>
-</section>
-</main>
+      const noiseFilter = audioCtx.createBiquadFilter();
+      noiseFilter.type = 'highpass';
+      noiseFilter.frequency.value = 3200;
 
-<footer class="footer">
-<p>&copy; <span id="year"></span> Mazin Aboud &bull; Built with HTML, CSS &amp; JavaScript</p>
-</footer>
+      const noiseGain = audioCtx.createGain();
+      noiseGain.gain.setValueAtTime(0.045, t);
+      noiseGain.gain.exponentialRampToValueAtTime(0.0001, t + 0.018);
 
-<button id="topBtn" aria-label="Back to top">&#8593;</button>
-<script src="script.js?v=9"></script>
+      noise.connect(noiseFilter).connect(noiseGain).connect(audioCtx.destination);
+      noise.start(t);
+    }catch(e){}
+  }
+
+  const soundToggle = document.getElementById('soundToggle');
+  function updateSoundIcon(){
+    if(!soundToggle) return;
+    soundToggle.textContent = soundEnabled ? '🔊' : '🔇';
+    soundToggle.classList.toggle('muted', !soundEnabled);
+    soundToggle.setAttribute('aria-pressed', String(!soundEnabled));
+  }
+  if(soundToggle){
+    updateSoundIcon();
+    soundToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      soundEnabled = !soundEnabled;
+      try{ localStorage.setItem('portfolio-sound', soundEnabled ? 'on' : 'off'); }catch(err){}
+      updateSoundIcon();
+      if(soundEnabled) playClick();
+    });
+  }
+
+  document.addEventListener('click', (e) => {
+    if(e.target.closest('#soundToggle')) return;
+    const interactive = e.target.closest(
+      'a, button, .stat-cell, .proj-card, .cheat-card, .join-card, .skill-tag, .cert-chip, .tag, .skill-feature, .console'
+    );
+    if(interactive) playClick();
+  });
+
+
+  /* ---- mobile nav ---- */
+  const navtoggle = document.getElementById('navtoggle');
+  const navlinks = document.getElementById('navlinks');
+  navtoggle.addEventListener('click', () => navlinks.classList.toggle('open'));
+  navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navlinks.classList.remove('open')));
+
+  /* ---- scroll progress bar ---- */
+  const progress = document.getElementById('progress');
+  function updateProgress(){
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    progress.style.width = scrolled + '%';
+  }
+  document.addEventListener('scroll', updateProgress, {passive:true});
+  updateProgress();
+
+  /* ---- active nav link on scroll ---- */
+  const sections = ['about','experience','projects','skills','deepdive','certifications','contact'].map(id => document.getElementById(id));
+  const navA = navlinks.querySelectorAll('a');
+  const dotA = document.querySelectorAll('.dotnav a');
+  function updateActiveNav(){
+    let current = '';
+    sections.forEach(sec => {
+      const rect = sec.getBoundingClientRect();
+      if(rect.top <= 120 && rect.bottom >= 120) current = sec.id;
+    });
+    navA.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+    dotA.forEach(a => {
+      const isTop = a.getAttribute('href') === '#top' && !current && window.scrollY < 200;
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current || isTop);
+    });
+  }
+  document.addEventListener('scroll', updateActiveNav, {passive:true});
+  updateActiveNav();
+
+  /* ---- scroll reveal ---- */
+  if(!reduceMotion && 'IntersectionObserver' in window){
+    const revealTargets = document.querySelectorAll('[data-reveal], [data-reveal-stagger]');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.15, rootMargin:'0px 0px -60px 0px'});
+    revealTargets.forEach(t => io.observe(t));
+  } else {
+    document.querySelectorAll('[data-reveal], [data-reveal-stagger]').forEach(t => t.classList.add('in-view'));
+  }
+
+  /* ---- animated stat counters ---- */
+  function animateCount(el){
+    const target = parseFloat(el.dataset.count);
+    const suffix = el.dataset.suffix ?? '';
+    const isDecimal = String(target).includes('.');
+    const duration = 1100;
+    const start = performance.now();
+    function tick(now){
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      const val = target * eased;
+      el.textContent = (isDecimal ? val.toFixed(1) : Math.round(val)) + suffix;
+      if(p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  const counters = document.querySelectorAll('[data-count]');
+  if(!reduceMotion && 'IntersectionObserver' in window){
+    const cio = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          animateCount(entry.target);
+          cio.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.6});
+    counters.forEach(c => cio.observe(c));
+  } else {
+    counters.forEach(c => { c.textContent = c.dataset.count + (c.dataset.suffix ?? ''); });
+  }
+
+  /* ---- linux hacker-terminal matrix rain ---- */
+  const hackRain = document.getElementById('hackRain');
+  if(hackRain){
+    const glyphs = '01アカサタナ#$%&@01<>/{}010101root sudo apt ufw ssh chmod'.split('');
+    const colCount = 16;
+    for(let i=0;i<colCount;i++){
+      const col = document.createElement('div');
+      col.className = 'hack-col';
+      let str = '';
+      const lines = 30;
+      for(let l=0;l<lines;l++){ str += glyphs[Math.floor(Math.random()*glyphs.length)] + '\n'; }
+      col.textContent = str;
+      const dur = (reduceMotion ? 0 : (4 + Math.random()*5)).toFixed(2);
+      col.style.animationDuration = dur + 's';
+      col.style.animationDelay = (-Math.random()*8).toFixed(2) + 's';
+      hackRain.appendChild(col);
+    }
+  }
+
+  /* ---- hero console log tail ---- */
+  const logLines = [
+    { text: 'ticket #4821 closed <span class="ok">within SLA</span>', path:'HELPDESK' },
+    { text: 'SMOWL exam session 500/500 hosts <span class="ok">online</span>', path:'EXAMS' },
+    { text: 'AnyDesk session established <span class="ok">(auth ok)</span>', path:'TIER 2' },
+    { text: 'DHCP lease assigned — pool 192.168.8.0/24', path:'VLAN 80' },
+    { text: 'M365 mailbox restored — user notified', path:'MICROSOFT 365' },
+    { text: 'ufw reload — 3 rules <span class="ok">active</span>', path:'UBUNTU SRV' },
+    { text: 'KB article published — escalations −25%', path:'DOCS' },
+  ];
+  const consoleBody = document.getElementById('consoleBody');
+  let logIndex = 0;
+  function pushLogLine(){
+    if(!consoleBody) return;
+    const item = logLines[logIndex % logLines.length];
+    const line = document.createElement('div');
+    line.className = 'console-line';
+    line.innerHTML = `<span class="path">[${item.path}]</span> ${item.text}`;
+    consoleBody.appendChild(line);
+    while(consoleBody.children.length > 4){
+      consoleBody.removeChild(consoleBody.firstChild);
+    }
+    logIndex++;
+  }
+  if(consoleBody){
+    pushLogLine();
+    if(!reduceMotion){
+      setInterval(pushLogLine, 2200);
+    } else {
+      logLines.forEach((_, i) => { logIndex = i; pushLogLine(); });
+    }
+  }
+
+  /* ---- topology glow follows cursor ---- */
+  const topoWrap = document.getElementById('topoWrap');
+  const topoGlow = document.getElementById('topoGlow');
+  if(topoWrap && topoGlow && !reduceMotion && window.matchMedia('(hover:hover)').matches){
+    topoWrap.addEventListener('mousemove', (e) => {
+      const rect = topoWrap.getBoundingClientRect();
+      topoGlow.style.left = (e.clientX - rect.left) + 'px';
+      topoGlow.style.top = (e.clientY - rect.top) + 'px';
+    });
+  }
+</script>
+
 </body>
 </html>
